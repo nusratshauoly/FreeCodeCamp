@@ -40,5 +40,11 @@ tribute of input.** `name=""`
         <input type="radio"> Button
     </label>` : Label elements are used to help associate the text for an input element with the input element itself (especially for assistive technologies like screen readers).
 27. **Id attribute** `<input id="indoor" type="radio">` : The id attribute is used to identify specific HTML elements. Each id attribute's value must be unique from all other id values for the entire page. 
+28. **Name Attribute of input.** `name=""`
+29. **Value Attribute of input.** `value=""`
+30. **Fieldset element.** `<fieldset></fieldset>`
+31. **Legend element.** `<legend></legend>`
+32. **Footer section** `<footer></footer>`
+33. **Head and Body element** `<head></head> and <body></body>`
 
 Check the HTML code [here](./index.html)  
