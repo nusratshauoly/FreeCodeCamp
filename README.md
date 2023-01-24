@@ -6,7 +6,7 @@ I am learning HTML by Building a Cat Photo App.
 More Info [here](./Day-1/Day-1.md)
 
 ## Day-2
-I am learning 
+I am learning CSS by building Basic CSS by Building a Cafe Menu. 
  
 More Info [here](./Day-2/Day-2.md)
 

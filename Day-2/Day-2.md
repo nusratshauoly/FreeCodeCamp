@@ -1,5 +1,5 @@
 # Day-2
-I am learning CSS . I am learning CSS by building Basic CSS by Building a Cafe Menu.
+I am learning CSS. I am learning CSS by building Basic CSS by Building a Cafe Menu.
 
 I learnt the following:
 
@@ -20,7 +20,7 @@ I learnt the following:
 14. **Article element** `<article></article>` 
 15. **Text-align property** `text-align:`
 16. **Display property** `display: `
-17. **Space inside div** `padding-left/ padding-right/ padding-top/ padding-bottom/ padding:top left bottom right`
+17. **Space inside div** `padding-left/ padding-right/ padding-top/ padding-bottom/ padding:top left bottom right`.
 18. **Max-width property** `max-width:`
 19. **Font-family property** `font-family:`
 20. **Font-style property** `font-style`
