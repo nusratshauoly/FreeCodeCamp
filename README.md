@@ -11,7 +11,7 @@ I am learning CSS by building Basic CSS by Building a Cafe Menu.
 More Info [here](./Day-2/Day-2.md)
 
 ## Day-3
-I am learning   
+I am learning CSS by building a Set of Colored Markers.  
 
 More Info [here](./Day-3/Day-3.md)
 
