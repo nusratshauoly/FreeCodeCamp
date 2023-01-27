@@ -22,8 +22,10 @@ More Info [here](./Day-4/Day-4.md)
 
 ## Day-5
 I learned to build Survey Form.
+I learned to build a CSS Box Model by Building a Rothko Painting .
 
-More Info [here](./Day-5/Day-5.md)
+More Info [here](./Day-5/survey-form/Day-5.md)
+More Info [here](./Day-5/rothko-painting/readme.md)
 
 ## Day-6
 I am learning 

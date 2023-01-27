@@ -34,6 +34,7 @@ body {
   label {
     display: block;
     margin: 0.5rem 0;
+    font-size: inherit;
   }
   
   input,
@@ -72,5 +73,4 @@ body {
   }
   a{
     color:#dfdfe2;
-  
   }
