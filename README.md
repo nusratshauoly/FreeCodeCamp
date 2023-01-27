@@ -1,22 +1,22 @@
 # 100-Days-Of-Code
 
 ## Day-1
-I am learning HTML by Building a Cat Photo App.
+I am learned HTML by Building a Cat Photo App.
 
 More Info [here](./Day-1/Day-1.md)
 
 ## Day-2
-I am learning CSS by building Basic CSS by Building a Cafe Menu. 
+I am learned CSS by building Basic CSS by Building a Cafe Menu. 
  
 More Info [here](./Day-2/Day-2.md)
 
 ## Day-3
-I am learning CSS by building a Set of Colored Markers.  
+I am learned CSS by building a Set of Colored Markers.  
 
 More Info [here](./Day-3/Day-3.md)
 
 ## Day-4
-I am learning HTML Forms by Building a Registration Form. 
+I am learned HTML Forms by Building a Registration Form. 
 
 More Info [here](./Day-4/Day-4.md)
 
@@ -28,9 +28,13 @@ More Info [here](./Day-5/survey-form/Day-5.md)
 More Info [here](./Day-5/rothko-painting/readme.md)
 
 ## Day-6
-I am learning 
+I learned CSS Flexbox by Building a Photo Gallery.
+I Learned Typography by Building a Nutrition Label.
+I Learned Accessibility by Building a Quiz.
 
-More Info [here](./Day-6/Day-6.md)  
+More Info [here](./Day-6/Poto-Gallery/readme.md)
+More Info [here](./Day-6/Nutrition-Label/readme.md)
+More Info [here](./Day-6/Building-a-quiz//readme.md)
 
 ## Day-7
 I am 
