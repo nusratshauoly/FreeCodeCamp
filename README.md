@@ -30,16 +30,16 @@ More Info [here](./Day-5/rothko-painting/readme.md)
 ## Day-6
 I learned CSS Flexbox by Building a Photo Gallery.
 I Learned Typography by Building a Nutrition Label.
-I Learned Accessibility by Building a Quiz.
+
 
 More Info [here](./Day-6/Poto-Gallery/readme.md)
 More Info [here](./Day-6/Nutrition-Label/readme.md)
-More Info [here](./Day-6/Building-a-quiz//readme.md)
+
 
 ## Day-7
-I am 
+I Learned Accessibility by Building a Quiz. 
 
-More Info [here](./Day-7/Day-7.md)  
+More Info [here](./Day-7/Building-a-quiz/readme.md)  
 
 ## Day-8  
 I am learning     

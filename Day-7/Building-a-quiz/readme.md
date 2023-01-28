@@ -1,4 +1,4 @@
-# Day-6
+# Day-7
 I am learning Accessibility by Building a Quiz.
 
 I learnt the following:   
