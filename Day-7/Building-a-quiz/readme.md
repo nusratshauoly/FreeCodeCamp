@@ -15,9 +15,17 @@ I learnt the following:
 10. **clip** property: `clip: rect(0, 0, 0, 0)`.
 11. **white-space** property: `white-space: nowrap`.
 12. **border** property: `border: 0`.
-
-
-
+13. **flex-wrap** property : `flex-wrap:wrap`.
+14. **min-width** propertty : `min-width: 55px`.
+15. **margin-block** property: `margin-block: 0`.
+16. **display** property : `display:block` .
+17. **accesskey** attribute : `accesskey="s"`.
+18. **position** property: `position:fixed`.
+19. **padding-inline-start** propertty : ` padding-inline-start: 0`.
+20. **list-style** property: `list-style: none;`.
+21. **scroll-behavior** property : `scroll-behavior: smooth`.
+22. **media** feature: `@media (feature: value) {selector { styles } }`.
+23. **prefers-reduced-motion** feature : `prefers-reduced-motion: no-preference`. 
 
 
 Check the HTML code [here](./index.html)  
