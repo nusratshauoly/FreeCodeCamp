@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    color:#333;
+    font-size: 1rem;  
+}
+#main{
+   width: 99%;
+   height: auto;
+   background-color: #eee;
+   margin: 40px auto;
+   border-radius: 5px;
+}
+div{
+    margin-bottom:20px;
+}
+h1{
+    font-size:2rem;
+    text-align: center;
+    padding-top: 50px;
+    font-weight: bolder;
+}
+p{
+    text-align: center;
+}
+img{
+    display:block;
+    border:1px solid #ffffff;
+    padding:4.5rem 2rem;
+    background-color: #ffffff;
+}
+#image{
+    max-width: 100%;
+    height:auto;
+    margin: 0 auto;
+}
+#img-caption{
+   margin-top: -4rem;
+   text-align: center;   
+   line-height: 1.5rem;
+}
+#tribute-info > h3{
+text-align: center;
+margin: 3rem 0;
+font-size: 1.17rem;
+font-weight: bold;
+}
+span{
+    font-weight: bold;
+}
+ul > li{
+    line-height: 1.6rem;
+}
+#tribute-info{
+    margin: 0 auto;
+    text-align: left;
+    width:75%;
+    padding: 10px 10px;
+}
+#quote{
+    text-align: left;
+    font-style: italic;
+    margin: 0 auto;
+    padding: 10px 20px;
+    line-height: 1.6rem;
+}
+#know-more {
+    display: inline;
+    line-height: 1.7rem; 
+    text-align: center;   
+}
+#know{
+    margin: 0 auto;
+}
+
+

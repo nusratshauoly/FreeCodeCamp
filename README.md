@@ -42,7 +42,7 @@ I Learned Accessibility by Building a Quiz.
 More Info [here](./Day-7/Building-a-quiz/readme.md)  
 
 ## Day-8  
-I am learning     
+Build a tribute page.    
 
 More Info [here](./Day-8/Day-8.md)
 
