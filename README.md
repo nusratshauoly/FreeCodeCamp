@@ -52,7 +52,7 @@ I am learning CSS Pseudo Selector by building a Balance Sheet.
 More Info [here](./Day-9/balance-sheet/Day-9.md)  
 
 ## Day-10  
-I am learning    
+I learned Responsive Design by building a Piano.   
 
 More Info [here](./Day-10/Day-10.md)  
 
