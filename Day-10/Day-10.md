@@ -13,11 +13,10 @@ I learnt the following:
 9. `border-radius: 0 0 3px 3px;`
 10. `left:-18px;`
 11. `.key.black--key::after{content: ""; background-color: #1d1e22;`
-12. **@media** at-rule: Media queries are commonly used to apply CSS based on the viewport width using the max-width and min-width properties.: `@media(max-width:768px){  #pian {width: 358px;}}`
+12. **@media** at-rule: Media queries are commonly used to apply CSS based on the viewport width using the max-width and min-width properties.: `@media(max-width:768px){  #piano {width: 358px;}}`
 13.  a media query that targets a display width between 500px and 1000px would be: `@media (min-width: 500px) and (max-width: 1000px){ #piano{width: 675px; } }`
 
-I learnt the following:
-1. 
+
 
 Check the HTML code [here](./index.html)  
 Check the CSS code [here](./styles.css)

@@ -57,7 +57,7 @@ I learned Responsive Design by building a Piano.
 More Info [here](./Day-10/Day-10.md)  
 
 ## Day-11  
-I am learning    
+I am learning Intermediate CSS by Building a Picasso Painting.   
 
 More Info [here](./Day-11/Day-11.md)
 
