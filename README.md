@@ -62,20 +62,24 @@ I am learning Intermediate CSS by Building a Picasso Painting.
 More Info [here](./Day-11/Day-11.md)
 
 ## Day-12  
-I am learning    
+I learned CSS variables by building a city skyline
+I learned CSS grid by building a magazine    
 
-More Info [here](./Day-12/Day-12.md)
-
+More Info [here](.//Day-12/CSS-Variables-by-Building-a-City-Skyline/readme.md)
+More Info [here](.//Day-12/CSS-grid-by-building-a-magazine/readme.md)
 ## Day-13
 
-I am learning    
+I learned CSS animation by building a Ferris Wheel  
 
-More Info [here](./Day-13/Day-13.md)
+More Info [here](./Day-13/CSS-animation-by-building-a-Ferris-Wheel/readme.md)
+More Info [here](./Day-13/CSS-transforms-by-building-a-penguin/readme.md)
 
 ## Day-14  
-I am    
+I built product landing page
+I built technical documentation page 
 
-More Info [here](./Day-14/Day-14.md)  
+More Info [here](./Day-14/product-landing-page/readme.md)  
+More Info [here](./Day-14/technical-documentation-page/readme.md)  
   
 ## Day-15  
 I am learning    
