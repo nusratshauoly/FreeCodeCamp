@@ -75,16 +75,14 @@ More Info [here](./Day-13/CSS-animation-by-building-a-Ferris-Wheel/readme.md)
 More Info [here](./Day-13/CSS-transforms-by-building-a-penguin/readme.md)
 
 ## Day-14  
-I built product landing page
 I built technical documentation page 
 
-More Info [here](./Day-14/product-landing-page/readme.md)  
 More Info [here](./Day-14/technical-documentation-page/readme.md)  
   
 ## Day-15  
-I am learning    
+I built product landing page 
 
-More Info [here](./Day-15/Day-15.md)   
+More Info [here](./Day-15/product-landing-page/readme.md)   
 
 ## Day-16  
 I am learning .   
