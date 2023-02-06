@@ -71,11 +71,14 @@ code{
     width:65%;
     padding: 20px;
     margin-bottom: 7.5rem;
+    min-width:min-content;
 
 }
-@media screen and (min-width: 320px){
-   
-  
-     
-      
+@media (max-width: 1199px) and (min-width: 769px) {
+    #navbar{
+          width: 100%;
+        }
+    #main-doc{
+          width: 100%;
+        }
     }
