@@ -10,26 +10,28 @@ body{
     scroll-behavior: smooth;
     line-height: 1.5;
     display: block; 
-    width:100%;
+    width:100vw;
 }
 h2{
-    font-size: 28px;
+    font-size: 1.75rem;
 }
 p, a{
-    font-size: 16px;
+    font-size: 1rem;
 }
-section{
-    margin-top: 80px;
+section {
+    margin-top: 5rem;
     margin-bottom: 80px;
+    overflow-wrap: wrap;
 }
 #header{
     top:0;
     display: flex;
     align-items: center;
-    padding: 0 10px;
+    padding: 0px 10px;
     position: fixed;
-    min-height: 75px;
-    height:50px;  
+    min-height:75px; 
+    z-index: 1; 
+    background-color:#eee;
 }
 #logo img{
     width:40vw;
@@ -55,19 +57,80 @@ main{
     position:relative;
 }
 #message-box{
-    background-color: aqua;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     display: block; 
     height: 200px;
     width: 100%;
     padding-top: 20px;
 }
-#form{
-    display: block;
+#message-box, #how-it-works{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
+#form input[type="email"]{
+    max-width: 275px;
+    width:100%;
+    padding:7px;  
+    margin-top: 10px;
+    border-color: 1px solid lightgrey;}
 
+#form input[type="submit"]{
+    max-width: 150px;
+    width:100%;
+    padding:7px; 
+    height: 30px;
+    margin:15px 0; 
+    background-color: #f1c40f;
+    border: 0;
+    border-radius: 2px;
+    font-weight: 500;
+  }
+#features{
+    width: 80%;
+    margin-top:-30px;
+    /* min-width:150px; */
+   
+}
+  .feature{
+    display:flex;
+    gap:50px;
+    /* justify-content: center; */
+    align-items: center;
+    margin-bottom:20px;
+    margin-left: 200px;
+   
+}
+.fa-3x{
+    color:darkorange;
+    font-size: 3em;
+   
+}
+#pricing{
+display: flex;
+gap:15px;
+justify-content: center;
+}
+.price{
+    width:100%;
+    border:1px solid black;
+    border-radius: 2px;
+    height:250px;
+    width:300px;
+    text-align: center;  
+}
+.price-header{
+    height:35px;
+    background-color: #ddd;
+   padding:5px;
+   font-weight: 600;
+}
+.select{
+    padding:10px 20px;
+    margin: 15px 0;
+    border: 0;
+    background-color: #f1c40f;
+    border-radius: 5px;
+}
 
 /* @media screen and (max-width:1200px){
     
