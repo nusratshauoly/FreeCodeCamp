@@ -11,6 +11,7 @@ body{
     line-height: 1.5;
     display: block; 
     width:100vw;
+    height:100vh;
 }
 h2{
     font-size: 1.75rem;
@@ -20,16 +21,17 @@ p, a{
 }
 section {
     margin-top: 5rem;
-    margin-bottom: 80px;
+    margin-bottom: 5rem;
     overflow-wrap: wrap;
 }
+/* header section */
 #header{
     top:0;
     display: flex;
     align-items: center;
     padding: 0px 10px;
     position: fixed;
-    min-height:75px; 
+    min-height:4.68rem; 
     z-index: 1; 
     background-color:#eee;
 }
@@ -43,7 +45,7 @@ nav > ul{
     width:45vw;
     display: flex;
     justify-content: flex-end;
-    margin-left: 150px;  
+    margin-left: 9.5rem;  
 }
 nav > ul > li {
     list-style: none;
@@ -51,16 +53,17 @@ nav > ul > li {
 .nav-link{
     text-decoration: none;
     color:#000000;
-    padding: 30px;
+    padding: 2rem;
 }
+/* inbox section */
 main{
     position:relative;
 }
 #message-box{
     display: block; 
-    height: 200px;
+    height: 12.5rem;
     width: 100%;
-    padding-top: 20px;
+    padding-top: 1.25rem;
 }
 #message-box, #how-it-works{
     align-items: center;
@@ -68,58 +71,55 @@ main{
     text-align: center;
 }
 #form input[type="email"]{
-    max-width: 275px;
+    max-width: 17.18rem;
     width:100%;
-    padding:7px;  
-    margin-top: 10px;
+    padding:0.43rem;  
+    margin-top: 0.62rem;
     border-color: 1px solid lightgrey;}
 
 #form input[type="submit"]{
-    max-width: 150px;
+    max-width: 9.37rem;
     width:100%;
     padding:7px; 
-    height: 30px;
+    height: 1.87rem;
     margin:15px 0; 
     background-color: #f1c40f;
     border: 0;
     border-radius: 2px;
     font-weight: 500;
   }
+/* features section */
 #features{
     width: 80%;
-    margin-top:-30px;
-    /* min-width:150px; */
-   
+    margin-top:-30px;   
 }
   .feature{
     display:flex;
     gap:50px;
-    /* justify-content: center; */
     align-items: center;
-    margin-bottom:20px;
-    margin-left: 200px;
-   
+    margin-bottom:1.25rem;
+    margin-left: 12.5rem;  
 }
 .fa-3x{
     color:darkorange;
-    font-size: 3em;
-   
+    font-size: 3em;  
 }
+/* price section */
 #pricing{
 display: flex;
-gap:15px;
+gap:1rem;
 justify-content: center;
 }
 .price{
     width:100%;
     border:1px solid black;
     border-radius: 2px;
-    height:250px;
-    width:300px;
+    height:15.62rem;
+    width:18.75rem;
     text-align: center;  
 }
 .price-header{
-    height:35px;
+    height:2.18rem;
     background-color: #ddd;
    padding:5px;
    font-weight: 600;
@@ -131,7 +131,79 @@ justify-content: center;
     background-color: #f1c40f;
     border-radius: 5px;
 }
-
-/* @media screen and (max-width:1200px){
+/* footer section */
+footer{
+    height: 100px;
+    background-color: #ddd;
+    padding: 20px;
     
-} */
+}
+footer > ul, .copyright{
+    display: flex;
+    justify-content: flex-end;
+}
+li, a{
+    list-style: none;
+    text-decoration: none;
+    color:#000000;
+    padding: 5px 10px;
+}
+@media screen and (max-width:512px){
+    body{ 
+        min-width:100vw;
+    }
+    section {
+        margin-top: 10rem;
+    }
+    /* header section */
+    #header{
+        top:-2;
+        display: block;
+        margin:2px 50px;  
+        max-width:100vw;
+        align-items: center;
+        justify-content: center;
+    }
+    #logo img{
+        min-width:80vw;
+        margin: 1rem 0 0 -2rem;
+    }
+    nav > ul{
+        display: block;
+        margin: 1rem 0 0 3rem;
+        align-items: center;
+        justify-content: center;
+    }
+/* features */
+    #features{
+        margin-top:-30px;
+    }
+      .feature{
+        display:block;
+        margin:30px auto;
+        margin-left: 50px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+/* how it works section */
+    #video{
+        height:300px;
+        width:300px;
+    }
+/* price section */
+    #pricing{
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+    }  
+/* footer section */
+    footer > ul, .copyright{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+}
