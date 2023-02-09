@@ -1,9 +1,92 @@
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+body{
+    color:#ffffff;
+    line-height: 1.5;
+    font-weight: 400;
+    width:100vw;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    display: block; 
+    height:100vh;
+}
+h1{
+    font-size: 3.5rem;
+}
+h2{
+    font-size: 2.5rem;
+}
+h3{
+    font-size: 2rem;
+}
+h5{
+    font-size: 1.5rem;
+}
+p{
+    font-size: 1rem;
+    color:#fffff;
+}
 #navbar{
     top:0;
     width:100%;
+    left:0;
+    z-index:1;
+    position: fixed;
+    align-items: center;
+    height:70px;
+    box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
+    background-color: #be3144;
+    display: flex;
+    justify-content: flex-end;
 
 }
+#navbar > ul{
+    display: flex;
+    margin-right: 2rem;
+}
+#navbar > ul >li{
+    list-style: none;  
+}
+.header-link {
+    text-decoration: none;
+    color:#ffffff;
+    font-size: 1.5rem;
+    padding: 2rem;
+}
+#welcome-section, #contacts{
+    width:100vw;
+    height:100vh;
+    line-height: 1.7;
+    background-color: #000;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(90deg, #3a3d40 0%, #181719 100%);
+}
+.welcome-section-description{
+    color: #be3144;
+    font-style: italic;   
+}
+.coffee{
+    font-style: italic;  
+   
+}
+footer{
+   background-color: #000;
+   background-image: linear-gradient(90deg, #3a3d40 0%, #181719 100%);
+   border-top: 5px solid #be3144;
+   padding:30px;
+   display: flex;
+  justify-content: flex-end;
+}
 
-@media  screen and (max-width:1200px) {
-    
+@media  screen and (min-width:475px) {
+    body{
+        min-width:100vw;
+    }
 }
