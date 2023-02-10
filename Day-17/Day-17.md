@@ -1,8 +1,4 @@
 # Day-17
+ Earned responsive web design certification
 
-
-I learnt the following:
-1. 
-
-Check the HTML code [here](./.html)  
-Check the CSS code [here](./.css)
+ [https://www.freecodecamp.org/certification/fccbbca71a1-58ef-4b87-97f2-9f1b4b254c08/responsive-web-design]
