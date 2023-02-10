@@ -16,19 +16,17 @@ body{
 h1{
     font-size: 3.5rem;
 }
-h2{
-    font-size: 2.5rem;
-}
-h3{
+h2, h3{
     font-size: 2rem;
 }
 h5{
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 p{
     font-size: 1rem;
-    color:#fffff;
+    color: #ffffff;
 }
+/* header section */
 #navbar{
     top:0;
     width:100%;
@@ -41,7 +39,6 @@ p{
     background-color: #be3144;
     display: flex;
     justify-content: flex-end;
-
 }
 #navbar > ul{
     display: flex;
@@ -56,6 +53,7 @@ p{
     font-size: 1.5rem;
     padding: 2rem;
 }
+/* about section */
 #welcome-section, #contacts{
     width:100vw;
     height:100vh;
@@ -72,10 +70,80 @@ p{
     color: #be3144;
     font-style: italic;   
 }
+/* work section */
+#projects{
+    width:100vw;
+    background-color: #45567d;
+}
+.project-section-header{
+    text-align: center;
+    border-bottom: 2px solid white;
+    max-width: 640px;
+    margin: 0 auto 4rem auto;
+    padding-top: 3rem;
+}
+.projects{
+    display: grid;
+    grid-template-columns: 6rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    width:100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap:2rem;
+    margin-bottom: 6rem;
+    border: 0;
+}
+.project{
+    background-color: #303841;
+    box-shadow: 1px 2px 1px 2px;
+    border-radius: 5px; 
+} 
+.project-image{
+    width:100%;
+    height:25rem;
+    border-radius: 2px;
+    object-fit: cover;   
+}
+.project-title{
+    text-decoration: none;
+    padding:1rem 0 ;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.code{
+    color:#be3144
+}
+.btn{
+    padding: 1rem 2rem;
+    display: inline-block;
+    border-radius: 5px;
+}
+.btn-show-all{
+    color: #ffffff;
+    font-size: 1.5rem;
+    background-color: #be3144;
+    transition: background-color 0.3s ease-out;
+    text-decoration: none;
+   margin: -2rem auto 2rem auto;
+}
+.right-icon{
+    padding-left: .5rem;
+}
+/* contact section */
 .coffee{
     font-style: italic;  
-   
+    margin-bottom: 3rem;   
 }
+.contact-details{
+    text-decoration: none;
+    color:#ffffff;  
+    padding: 0 30px;
+    font-size: 1.5rem;      
+}
+.contact-details:hover{
+    color:#be3144;  
+}
+/* footer */
 footer{
    background-color: #000;
    background-image: linear-gradient(90deg, #3a3d40 0%, #181719 100%);
@@ -84,9 +152,30 @@ footer{
    display: flex;
   justify-content: flex-end;
 }
-
-@media  screen and (min-width:475px) {
+.footer-text{
+    text-decoration: none;
+    color: #ffffff;
+    padding-left: 5px;
+}
+/* media query */
+@media  screen and (min-width:412px) {
     body{
-        min-width:100vw;
+      min-width:100vw;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+/* header section */
+    #nav-bar{
+        min-width: 100%;
+    }
+    .header-link{
+        margin-left: 1.5rem;
+        padding: 0 10px;
+    }
+/* work section */
+    .project-image{
+        width:90%;
+        height:20rem;
     }
 }
