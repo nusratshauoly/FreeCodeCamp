@@ -26,3 +26,5 @@ I learnt the following:
 111. use multiple conditional (ternary) operators
 112. use recursion to create a countdown
 113. use recursion to create a range of numbers
+
+Check the Javascript code [here](./index.js)  

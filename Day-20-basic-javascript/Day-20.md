@@ -33,3 +33,5 @@ I learnt the following:
 86. accessing object properties with variables
 87. updating object properties
 88. Add new properties to a javascript object
+
+Check the Javascript code [here](./index.js)  
