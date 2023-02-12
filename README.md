@@ -85,34 +85,34 @@ I built product landing page
 More Info [here](./Day-15/product-landing-page/readme.md)   
 
 ## Day-16  
-I am learning .   
+Built a Personal Portfolio.  
 
 More Info [here](./Day-16/Day-16.md)   
 
 ## Day-17  
-I am learning    
+Earned responsive web design certification.   
 
 More Info [here](./Day-17/Day-17.md)  
 
 ## Day-18  
-I am Learning   
+I am Learning Basic Javascript.  
 
-More Info [here](./Day-18/Day-18.md)   
+More Info [here](./Day-18-basic-javascript/Day-18.md)   
 
 ## Day-19  
-I am learning .   
+I am learning Basic Javascript.   
 
-More Info [here](./Day-19/Day-19.md)    
+More Info [here](./Day-19-basic-javascript/Day-19.md)    
 
 ## Day-20  
-I am learning     
+I am learning Basic Javascript    
 
-More Info [here](./Day-20/Day-20.md)    
+More Info [here](./Day-20-basic-javascript/Day-20.md)    
 
 ## Day-21  
-I am learning  
+I am learning Basic Javascript    
 
-More Info [here](./Day-21/Day-21.md) 
+More Info [here](./Day-21-basic-javascript/Day-21.md) 
 
 ## Day-22  
 I am learning    
