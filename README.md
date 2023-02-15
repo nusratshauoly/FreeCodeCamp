@@ -115,14 +115,14 @@ I am learning Basic Javascript
 More Info [here](./Day-21-basic-javascript/Day-21.md) 
 
 ## Day-22  
-I am learning    
+I am learning Basic Javascript  
 
-More Info [here](./Day-22/Day-22.md) 
+More Info [here](./Day-22-basic-javascript/Day-22.md) 
 
 ## Day-23  
-I am learning    
+I am learning Basic Javascript   
 
-More Info [here](./Day-23/Day-23.md)
+More Info [here](./Day-23-basic-javascript/Day-23.md)
 
 ## Day-24  
 I am learning 
