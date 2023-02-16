@@ -1,5 +1,4 @@
 <!-- .1. Use Responsive Design with Bootstrap Fluid Containers -->
-
 <!-- 
 In the HTML5 and CSS section of freeCodeCamp we built a Cat Photo App. Now let's go back to it. This time, we'll style it using the popular Bootstrap responsive CSS framework.
 
@@ -19,7 +18,64 @@ Waiting:Your div element should have the class container-fluid.
 Waiting:Your div element should have a closing tag.
 Waiting:All HTML elements after the closing style tag should be nested in .container-fluid.
  -->
-
+ <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+ <style>
+   .red-text {
+     color: red;
+   }
+ 
+   h2 {
+     font-family: Lobster, Monospace;
+   }
+ 
+   p {
+     font-size: 16px;
+     font-family: Monospace;
+   }
+ 
+   .thick-green-border {
+     border-color: green;
+     border-width: 10px;
+     border-style: solid;
+     border-radius: 50%;
+   }
+ 
+   .smaller-image {
+     width: 100px;
+   }
+ </style>
+ 
+ <div class="container-fluid"> 
+   <h2 class="red-text">CatPhotoApp</h2>
+ 
+ <p>Click here for <a href="#">cat photos</a>.</p>
+ 
+ <a href="#"><img class="smaller-image thick-green-border" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+ 
+ <p>Things cats love:</p>
+ <ul>
+   <li>cat nip</li>
+   <li>laser pointers</li>
+   <li>lasagna</li>
+ </ul>
+ <p>Top 3 things cats hate:</p>
+ <ol>
+   <li>flea treatment</li>
+   <li>thunder</li>
+   <li>other cats</li>
+ </ol>
+ <form action="https://freecatphotoapp.com/submit-cat-photo">
+   <label><input type="radio" name="indoor-outdoor"> Indoor</label>
+   <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+   <label><input type="checkbox" name="personality"> Loving</label>
+   <label><input type="checkbox" name="personality"> Lazy</label>
+   <label><input type="checkbox" name="personality"> Crazy</label>
+   <input type="text" placeholder="cat photo URL" required>
+   <button type="submit">Submit</button>
+ </form>
+ </div>
+ 
 
 
  <!-- 2. Make Images Mobile Responsive -->
@@ -35,8 +91,65 @@ Waiting:Your new image should be below your old one and have the class img-respo
 Waiting:Your new image should not have the class smaller-image.
 Waiting:Your new image should have a src of https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg.
 Waiting:Your new img element should have a closing angle bracket.
-
 -->
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+  .red-text {
+    color: red;
+  }
+
+  h2 {
+    font-family: Lobster, Monospace;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: Monospace;
+  }
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+  .smaller-image {
+    width: 100px;
+  }
+</style>
+
+<div class="container-fluid">
+  <h2 class="red-text">CatPhotoApp</h2>
+
+  <p>Click here for <a href="#">cat photos</a>.</p>
+
+  <a href="#"><img class="smaller-image thick-green-border" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+
+<a href="#"><img class="img-responsive thick-green-border" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg" alt="A cute orange cat lying on its back."></a>
+  <p>Things cats love:</p>
+  <ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats hate:</p>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+  <form action="https://freecatphotoapp.com/submit-cat-photo">
+    <label><input type="radio" name="indoor-outdoor"> Indoor</label>
+    <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+    <label><input type="checkbox" name="personality"> Loving</label>
+    <label><input type="checkbox" name="personality"> Lazy</label>
+    <label><input type="checkbox" name="personality"> Crazy</label>
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
 
 
 <!-- 3.Center Text with Bootstrap -->
@@ -51,6 +164,64 @@ Tests
 Waiting:Your h2 element should be centered by applying the class text-center
 Waiting:Your h2 element should still have the class red-text
 -->
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+  .red-text {
+    color: red;
+  }
+
+  h2 {
+    font-family: Lobster, Monospace;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: Monospace;
+  }
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+  .smaller-image {
+    width: 100px;
+  }
+</style>
+
+<div class="container-fluid">
+  <h2 class="red-text text-center">CatPhotoApp</h2>
+
+  <p>Click here for <a href="#">cat photos</a>.</p>
+
+  <a href="#"><img class="smaller-image thick-green-border" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+
+  <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg" class="img-responsive" alt="Three kittens running towards the camera.">
+  <p>Things cats love:</p>
+  <ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats hate:</p>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+  <form action="https://freecatphotoapp.com/submit-cat-photo">
+    <label><input type="radio" name="indoor-outdoor"> Indoor</label>
+    <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+    <label><input type="checkbox" name="personality"> Loving</label>
+    <label><input type="checkbox" name="personality"> Lazy</label>
+    <label><input type="checkbox" name="personality"> Crazy</label>
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
 
 
 <!-- 4.Create a Bootstrap Button -->
@@ -63,8 +234,67 @@ Tests
 Waiting:You should create a new button element with the text Like.
 Waiting:Your new button should have two classes: btn and btn-default.
 Waiting:All of your button elements should have closing tags.
-
 -->
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+  .red-text {
+    color: red;
+  }
+
+  h2 {
+    font-family: Lobster, Monospace;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: Monospace;
+  }
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+  .smaller-image {
+    width: 100px;
+  }
+</style>
+
+<div class="container-fluid">
+  <h2 class="red-text text-center">CatPhotoApp</h2>
+
+  <p>Click here for <a href="#">cat photos</a>.</p>
+
+  <a href="#"><img class="smaller-image thick-green-border" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+
+  <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg" class="img-responsive" alt="Three kittens running towards the camera.">
+<button class="btn btn-default">Like</button>
+  <p>Things cats love:</p>
+  <ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats hate:</p>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+  <form action="https://freecatphotoapp.com/submit-cat-photo">
+    <label><input type="radio" name="indoor-outdoor"> Indoor</label>
+    <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+    <label><input type="checkbox" name="personality"> Loving</label>
+    <label><input type="checkbox" name="personality"> Lazy</label>
+    <label><input type="checkbox" name="personality"> Crazy</label>
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+    
+  </form>
+</div>
+
 
 
 <!-- 5.Create a Block Element Bootstrap Button -->
@@ -90,6 +320,66 @@ Waiting:Your button should still have the btn and btn-default classes.
 Waiting:Your button should have the class btn-block.
 Waiting:All of your button elements should have closing tags.
 -->
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+  .red-text {
+    color: red;
+  }
+
+  h2 {
+    font-family: Lobster, Monospace;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: Monospace;
+  }
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+  .smaller-image {
+    width: 100px;
+  }
+</style>
+
+<div class="container-fluid">
+  <h2 class="red-text text-center">CatPhotoApp</h2>
+
+  <p>Click here for <a href="#">cat photos</a>.</p>
+
+  <a href="#"><img class="smaller-image thick-green-border" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+
+  <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg" class="img-responsive" alt="Three kittens running towards the camera.">
+  <button class="btn btn-default btn-block">Like</button>
+  <p>Things cats love:</p>
+  <ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats hate:</p>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+  <form action="https://freecatphotoapp.com/submit-cat-photo">
+    <label><input type="radio" name="indoor-outdoor"> Indoor</label>
+    <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+    <label><input type="checkbox" name="personality"> Loving</label>
+    <label><input type="checkbox" name="personality"> Lazy</label>
+    <label><input type="checkbox" name="personality"> Crazy</label>
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+
 
 
 <!-- 6.Taste the Bootstrap Button Color Rainbow -->
@@ -106,6 +396,68 @@ Your button should have the class btn-primary.
 Waiting:Your button should still have the btn and btn-block classes.
 Waiting:All your button elements should have closing tags.
 -->
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+  .red-text {
+    color: red;
+  }
+
+  h2 {
+    font-family: Lobster, Monospace;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: Monospace;
+  }
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+  .smaller-image {
+    width: 100px;
+  }
+</style>
+
+<div class="container-fluid">
+  <h2 class="red-text text-center">CatPhotoApp</h2>
+
+  <p>Click here for <a href="#">cat photos</a>.</p>
+
+  <a href="#"><img class="smaller-image thick-green-border" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+
+  <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg" class="img-responsive" alt="Three kittens running towards the camera.">
+  <button class="btn btn-primary btn-block">Like</button>
+  <p>Things cats love:</p>
+  <ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats hate:</p>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+  <form action="https://freecatphotoapp.com/submit-cat-photo">
+    <label><input type="radio" name="indoor-outdoor"> Indoor</label>
+    <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+    <label><input type="checkbox" name="personality"> Loving</label>
+    <label><input type="checkbox" name="personality"> Lazy</label>
+    <label><input type="checkbox" name="personality"> Crazy</label>
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+
+
+
 
 <!-- 7. Call out Optional Actions with btn-info-->
 <!-- 
@@ -121,6 +473,69 @@ Waiting:Both of your Bootstrap buttons should have the btn and btn-block classes
 Waiting:Your new button should have the class btn-info.
 Waiting:All of your button elements should have closing tags.
 -->
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+  .red-text {
+    color: red;
+  }
+
+  h2 {
+    font-family: Lobster, Monospace;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: Monospace;
+  }
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+  .smaller-image {
+    width: 100px;
+  }
+</style>
+
+<div class="container-fluid">
+  <h2 class="red-text text-center">CatPhotoApp</h2>
+
+  <p>Click here for <a href="#">cat photos</a>.</p>
+
+  <a href="#"><img class="smaller-image thick-green-border" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+
+  <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg" class="img-responsive" alt="Three kittens running towards the camera.">
+  <button class="btn btn-block btn-primary">Like</button>
+<button class="btn btn-block btn-info">Info</button>
+
+  <p>Things cats love:</p>
+  <ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats hate:</p>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+  <form action="https://freecatphotoapp.com/submit-cat-photo">
+    <label><input type="radio" name="indoor-outdoor"> Indoor</label>
+    <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+    <label><input type="checkbox" name="personality"> Loving</label>
+    <label><input type="checkbox" name="personality"> Lazy</label>
+    <label><input type="checkbox" name="personality"> Crazy</label>
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+
+
 
 <!-- 8.Warn Your Users of a Dangerous Action with btn-danger  -->
 <!-- 
@@ -135,8 +550,67 @@ Waiting:You should create a new button element with the text Delete.
 Waiting:All of your Bootstrap buttons should have the btn and btn-block classes.
 Waiting:Your new button should have the class btn-danger.
 Waiting:All of your button elements should have closing tags.
-
 -->
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+  .red-text {
+    color: red;
+  }
+
+  h2 {
+    font-family: Lobster, Monospace;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: Monospace;
+  }
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+  .smaller-image {
+    width: 100px;
+  }
+</style>
+
+<div class="container-fluid">
+  <h2 class="red-text text-center">CatPhotoApp</h2>
+
+  <p>Click here for <a href="#">cat photos</a>.</p>
+
+  <a href="#"><img class="smaller-image thick-green-border" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+
+  <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg" class="img-responsive" alt="Three kittens running towards the camera.">
+  <button class="btn btn-block btn-primary">Like</button>
+  <button class="btn btn-block btn-info">Info</button>
+  <button class="btn btn-block btn-danger">Delete</button>
+  <p>Things cats love:</p>
+  <ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats hate:</p>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+  <form action="https://freecatphotoapp.com/submit-cat-photo">
+    <label><input type="radio" name="indoor-outdoor"> Indoor</label>
+    <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+    <label><input type="checkbox" name="personality"> Loving</label>
+    <label><input type="checkbox" name="personality"> Lazy</label>
+    <label><input type="checkbox" name="personality"> Crazy</label>
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+  </form>
+</div>
 
 
 
@@ -160,8 +634,75 @@ Waiting:Your buttons should all be nested within the same div element with the c
 Waiting:Each of your Bootstrap buttons should be nested within its own div element with the class col-xs-4.
 Waiting:Each of your button elements should have a closing tag.
 Waiting:Each of your div elements should have a closing tag.
-
 -->
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+  .red-text {
+    color: red;
+  }
+
+  h2 {
+    font-family: Lobster, Monospace;
+  }
+
+  p {
+    font-size: 16px;
+    font-family: Monospace;
+  }
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+  .smaller-image {
+    width: 100px;
+  }
+</style>
+
+<div class="container-fluid">
+  <h2 class="red-text text-center">CatPhotoApp</h2>
+
+  <p>Click here for <a href="#">cat photos</a>.</p>
+
+  <a href="#"><img class="smaller-image thick-green-border" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+
+  <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg" class="img-responsive" alt="Three kittens running towards the camera.">
+<div class="row">
+  <div class="col-xs-4">
+  <button class="btn btn-block btn-primary ">Like</button>
+  </div>
+  <div class="col-xs-4">
+  <button class="btn btn-block btn-info col-xs-4">Info</button>
+  </div>
+  <div class="col-xs-4">
+  <button class="btn btn-block btn-danger col-xs-4">Delete</button>
+  </div>
+</div>  
+  <p>Things cats love:</p>
+  <ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats hate:</p>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+  <form action="https://freecatphotoapp.com/submit-cat-photo">
+    <label><input type="radio" name="indoor-outdoor"> Indoor</label>
+    <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+    <label><input type="checkbox" name="personality"> Loving</label>
+    <label><input type="checkbox" name="personality"> Lazy</label>
+    <label><input type="checkbox" name="personality"> Crazy</label>
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+  </form>
+</div>
 
 
 
@@ -183,8 +724,71 @@ Waiting:Your h2 element should now have the class text-primary.
 Waiting:Your paragraph elements should no longer use the font Monospace.
 Waiting:The smaller-image class should be removed from your top image.
 Waiting:You should add the img-responsive class to your top image.
-
 -->
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+  
+
+  h2 {
+    font-family: Lobster, Monospace;
+  }
+
+ 
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+ 
+</style>
+
+<div class="container-fluid">
+  <h2 class="text-primary text-center">CatPhotoApp</h2>
+
+ 
+
+  <a href="#"><img class="img-responsive thick-green-border" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+
+  <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg" class="img-responsive" alt="Three kittens running towards the camera.">
+  <div class="row">
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-primary">Like</button>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-info">Info</button>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-danger">Delete</button>
+    </div>
+  </div>
+  <p>Things cats love:</p>
+  <ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats hate:</p>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+  <form action="https://freecatphotoapp.com/submit-cat-photo">
+    <label><input type="radio" name="indoor-outdoor"> Indoor</label>
+    <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+    <label><input type="checkbox" name="personality"> Loving</label>
+    <label><input type="checkbox" name="personality"> Lazy</label>
+    <label><input type="checkbox" name="personality"> Crazy</label>
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+
+
 
 
 <!-- 11. Use a span to Target Inline Elements -->
@@ -209,9 +813,62 @@ Your span element should be inside your p element.
 Waiting:Your span element should have just the text love.
 Waiting:Your span element should have class text-danger.
 Waiting:Your span element should have a closing tag.
-
 -->
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
 
+  h2 {
+    font-family: Lobster, Monospace;
+  }
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+</style>
+
+<div class="container-fluid">
+  <h2 class="text-primary text-center">CatPhotoApp</h2>
+
+  <a href="#"><img class="img-responsive thick-green-border" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+
+  <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg" class="img-responsive" alt="Three kittens running towards the camera.">
+  <div class="row">
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-primary">Like</button>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-info">Info</button>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-danger">Delete</button>
+    </div>
+  </div>
+  <p>Things cats <span>love:</span></p>
+  <ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats <span class="text-danger">hate:</span></p>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+  <form action="https://freecatphotoapp.com/submit-cat-photo">
+    <label><input type="radio" name="indoor-outdoor"> Indoor</label>
+    <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+    <label><input type="checkbox" name="personality"> Loving</label>
+    <label><input type="checkbox" name="personality"> Lazy</label>
+    <label><input type="checkbox" name="personality"> Crazy</label>
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+  </form>
+</div>
 
 <!-- 12. Create a Custom Heading-->
 <!-- 
@@ -228,9 +885,66 @@ Waiting:Your h2 element and topmost img element should both be nested together w
 Waiting:Your topmost img element should be nested within a div with the class col-xs-4.
 Waiting:Your h2 element should be nested within a div with the class col-xs-8.
 Waiting:All of your div elements should have closing tags.
-
-
 -->
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
+<style>
+  h2 {
+    font-family: Lobster, Monospace;
+  }
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+</style>
+
+<div class="container-fluid">
+  <div class="row">
+   <div class="col-xs-8"> 
+  <h2 class="text-primary text-center">CatPhotoApp</h2>
+</div>
+<div class="col-xs-4">
+  <a href="#"><img class="img-responsive thick-green-border" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+  </div>
+</div>
+  <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg" class="img-responsive" alt="Three kittens running towards the camera.">
+  <div class="row">
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-primary">Like</button>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-info">Info</button>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-danger">Delete</button>
+    </div>
+  </div>
+  <p>Things cats <span class="text-danger">love:</span></p>
+  <ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats hate:</p>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+  <form action="https://freecatphotoapp.com/submit-cat-photo">
+    <label><input type="radio" name="indoor-outdoor"> Indoor</label>
+    <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+    <label><input type="checkbox" name="personality"> Loving</label>
+    <label><input type="checkbox" name="personality"> Lazy</label>
+    <label><input type="checkbox" name="personality"> Crazy</label>
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
 
 
 
@@ -255,8 +969,67 @@ Waiting:You should add an i element with the classes fas and fa-thumbs-up.
 Waiting:Your fa-thumbs-up icon should be located within the Like button.
 Waiting:Your i element should be nested within your button element.
 Waiting:Your icon element should have a closing tag.
-
 -->
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<style>
+  h2 {
+    font-family: Lobster, Monospace;
+  }
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+</style>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-8">
+      <h2 class="text-primary text-center">CatPhotoApp</h2>
+    </div>
+    <div class="col-xs-4">
+      <a href="#"><img class="img-responsive thick-green-border" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+    </div>
+  </div>
+  <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg" class="img-responsive" alt="Three kittens running towards the camera.">
+  <div class="row">
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-primary">Like <i class="fas fa-thumbs-up"></i></button>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-info">Info <i class="fas fa-thumbs-up"></i></button>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-danger">Delete <i class="fas fa-thumbs-up"></i></button>
+    </div>
+  </div>
+  <p>Things cats <span class="text-danger">love:</span></p>
+  <ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats hate:</p>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+  <form action="https://freecatphotoapp.com/submit-cat-photo">
+    <label><input type="radio" name="indoor-outdoor"> Indoor</label>
+    <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+    <label><input type="checkbox" name="personality"> Loving</label>
+    <label><input type="checkbox" name="personality"> Lazy</label>
+    <label><input type="checkbox" name="personality"> Crazy</label>
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+
 
 
 <!-- 14.Add Font Awesome Icons to all of our Buttons -->
@@ -272,6 +1045,64 @@ Waiting:You should add a <i class="fas fa-info-circle"></i> within your info but
 Waiting:You should add a <i class="fas fa-trash"></i> within your delete button element.
 Waiting:Each of your i elements should have a closing tag and <i class="fas fa-thumbs-up"></i> is in your like button element.
 -->
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+  h2 {
+    font-family: Lobster, Monospace;
+  }
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+</style>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-8">
+      <h2 class="text-primary text-center">CatPhotoApp</h2>
+    </div>
+    <div class="col-xs-4">
+      <a href="#"><img class="img-responsive thick-green-border" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+    </div>
+  </div>
+  <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg" class="img-responsive" alt="Three kittens running towards the camera.">
+  <div class="row">
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-primary"><i class="fas fa-thumbs-up"></i> Like</button>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-info"><i class="fas fa-info-circle"></i> Info</button>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-danger"><i class="fas fa-trash"></i> Delete</button>
+    </div>
+  </div>
+  <p>Things cats <span class="text-danger">love:</span></p>
+  <ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats hate:</p>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+  <form action="https://freecatphotoapp.com/submit-cat-photo">
+    <label><input type="radio" name="indoor-outdoor"> Indoor</label>
+    <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+    <label><input type="checkbox" name="personality"> Loving</label>
+    <label><input type="checkbox" name="personality"> Lazy</label>
+    <label><input type="checkbox" name="personality"> Crazy</label>
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
 
 
 
@@ -288,8 +1119,69 @@ Waiting:All of your radio buttons should be nested inside one div with the class
 Waiting:Each of your radio buttons should be nested inside its own div with the class col-xs-6.
 Waiting:All of your div elements should have closing tags.
 -->
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+  h2 {
+    font-family: Lobster, Monospace;
+  }
 
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+</style>
 
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-8">
+      <h2 class="text-primary text-center">CatPhotoApp</h2>
+    </div>
+    <div class="col-xs-4">
+      <a href="#"><img class="img-responsive thick-green-border" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+    </div>
+  </div>
+  <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg" class="img-responsive" alt="Three kittens running towards the camera.">
+  <div class="row">
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-primary"><i class="fa fa-thumbs-up"></i> Like</button>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-info"><i class="fa fa-info-circle"></i> Info</button>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-danger"><i class="fa fa-trash"></i> Delete</button>
+    </div>
+  </div>
+  <p>Things cats <span class="text-danger">love:</span></p>
+  <ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats hate:</p>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+  <form action="https://freecatphotoapp.com/submit-cat-photo">
+  <div class="row">
+    <div class="col-xs-6">
+    <label><input type="radio" name="indoor-outdoor"> Indoor</label>
+    </div>
+    <div class="col-xs-6">
+    <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+    </div>
+    </div>
+    <label><input type="checkbox" name="personality"> Loving</label>
+    <label><input type="checkbox" name="personality"> Lazy</label>
+    <label><input type="checkbox" name="personality"> Crazy</label>
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+  </form>
+</div>
 
 <!-- 16. Responsively Style Checkboxes-->
 <!-- 
@@ -302,6 +1194,78 @@ Waiting:All of your checkboxes should be nested inside one div with the class ro
 Waiting:Each of your checkboxes should be nested inside its own div with the class col-xs-4.
 Waiting:All of your div elements should have closing tags.
  -->
+ <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+  h2 {
+    font-family: Lobster, Monospace;
+  }
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+</style>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-8">
+      <h2 class="text-primary text-center">CatPhotoApp</h2>
+    </div>
+    <div class="col-xs-4">
+      <a href="#"><img class="img-responsive thick-green-border" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+    </div>
+  </div>
+  <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg" class="img-responsive" alt="Three kittens running towards the camera.">
+  <div class="row">
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-primary"><i class="fa fa-thumbs-up"></i> Like</button>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-info"><i class="fa fa-info-circle"></i> Info</button>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-danger"><i class="fa fa-trash"></i> Delete</button>
+    </div>
+  </div>
+  <p>Things cats <span class="text-danger">love:</span></p>
+  <ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats hate:</p>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+  <form action="https://freecatphotoapp.com/submit-cat-photo">
+    <div class="row">
+      <div class="col-xs-6">
+        <label><input type="radio" name="indoor-outdoor"> Indoor</label>
+      </div>
+      <div class="col-xs-6">
+        <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+      </div>
+    </div>
+   <div class="row"> 
+     <div class="col-xs-4">
+    <label><input type="checkbox" name="personality"> Loving</label>
+    </div>
+    <div class="col-xs-4">
+    <label><input type="checkbox" name="personality"> Lazy</label>
+    </div>
+    <div class="col-xs-4">
+    <label><input type="checkbox" name="personality"> Crazy</label>
+    </div>
+    </div>
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+  </form>
+</div>
 
 
 
@@ -320,6 +1284,79 @@ Waiting:You should add a <i class="fa fa-paper-plane"></i> within your submit bu
 Waiting:The text input in your form should have the class form-control.
 Waiting:Each of your i elements should have a closing tag.
 -->
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+  h2 {
+    font-family: Lobster, Monospace;
+  }
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+</style>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-8">
+      <h2 class="text-primary text-center">CatPhotoApp</h2>
+    </div>
+    <div class="col-xs-4">
+      <a href="#"><img class="img-responsive thick-green-border" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+    </div>
+  </div>
+  <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg" class="img-responsive" alt="Three kittens running towards the camera.">
+  <div class="row">
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-primary"><i class="fa fa-thumbs-up"></i> Like</button>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-info"><i class="fa fa-info-circle"></i> Info</button>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-danger"><i class="fa fa-trash"></i> Delete</button>
+    </div>
+  </div>
+  <p>Things cats <span class="text-danger">love:</span></p>
+  <ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats hate:</p>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+  <form action="https://freecatphotoapp.com/submit-cat-photo">
+    <div class="row">
+      <div class="col-xs-6">
+        <label><input type="radio" name="indoor-outdoor" class="form-control"> Indoor</label>
+      </div>
+      <div class="col-xs-6">
+        <label><input type="radio" name="indoor-outdoor" class="form-control"> Outdoor</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-4">
+        <label><input type="checkbox" name="personality" class="form-control"> Loving</label>
+      </div>
+      <div class="col-xs-4">
+        <label><input type="checkbox" name="personality" class="form-control"> Lazy</label>
+      </div>
+      <div class="col-xs-4">
+        <label><input type="checkbox" name="personality" class="form-control"> Crazy</label>
+      </div>
+    </div>
+    <input type="text" placeholder="cat photo URL" class="form-control" required>
+    <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Submit</button>
+  </form>
+</div>
+
 
 
 
@@ -336,10 +1373,85 @@ Waiting:Your form submission button and text input should be nested in a div wit
 Waiting:Your form text input should be nested in a div with the class col-xs-7.
 Waiting:Your form submission button should be nested in a div with the class col-xs-5.
 Waiting:All of your div elements should have closing tags.
-
 -->
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<style>
+  h2 {
+    font-family: Lobster, Monospace;
+  }
 
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
 
+</style>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-8">
+      <h2 class="text-primary text-center">CatPhotoApp</h2>
+    </div>
+    <div class="col-xs-4">
+      <a href="#"><img class="img-responsive thick-green-border" src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+    </div>
+  </div>
+  <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg" class="img-responsive" alt="Three kittens running towards the camera.">
+  <div class="row">
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-primary"><i class="fa fa-thumbs-up"></i> Like</button>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-info"><i class="fa fa-info-circle"></i> Info</button>
+    </div>
+    <div class="col-xs-4">
+      <button class="btn btn-block btn-danger"><i class="fa fa-trash"></i> Delete</button>
+    </div>
+  </div>
+  <p>Things cats <span class="text-danger">love:</span></p>
+  <ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats hate:</p>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+  <form action="https://freecatphotoapp.com/submit-cat-photo">
+    <div class="row">
+      <div class="col-xs-6">
+        <label><input type="radio" name="indoor-outdoor"> Indoor</label>
+      </div>
+      <div class="col-xs-6">
+        <label><input type="radio" name="indoor-outdoor"> Outdoor</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-4">
+        <label><input type="checkbox" name="personality"> Loving</label>
+      </div>
+      <div class="col-xs-4">
+        <label><input type="checkbox" name="personality"> Lazy</label>
+      </div>
+      <div class="col-xs-4">
+        <label><input type="checkbox" name="personality"> Crazy</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-7">
+    <input type="text" class="form-control" placeholder="cat photo URL" required>
+    </div>
+    <div class="col-xs-5">
+    <button type="submit" class="btn btn-primary"><i class="fa fa-paper-plane"></i> Submit</button>
+    </div>
+    </div>
+  </form>
+</div>
 <!-- 19.Create a Bootstrap Headline -->
 <!-- 
 Now let's build something from scratch to practice our HTML, CSS and Bootstrap skills.
@@ -357,6 +1469,7 @@ Waiting:Your h3 element should be colored by applying the class text-primary
 Waiting:Your h3 element should be centered by applying the class text-center
 Waiting:Your h3 element should have the text jQuery Playground.
 -->
+<h3 class="text-primary text-center">jQuery Playground</h3>
 
 
 <!-- 20. House our page within a Bootstrap container-fluid div -->
@@ -370,7 +1483,9 @@ Waiting:Your div element should have the class container-fluid.
 Waiting:Each of your div elements should have closing tags.
 Waiting:Your h3 element should be nested inside a div element.
 -->
-
+<div class="container-fluid">
+    <h3 class="text-primary text-center">jQuery Playground</h3>
+    </div>
 
 <!-- 21. Create a Bootstrap Row -->
 <!-- 
@@ -384,7 +1499,12 @@ Waiting:Your div element should have the class row
 Waiting:Your row div should be nested inside the container-fluid div
 Waiting:Your div element should have a closing tag.
 -->
-
+<div class="container-fluid">
+    <h3 class="text-primary text-center">jQuery Playground</h3>
+    <div class="row">
+      </div>
+  
+  </div>
 
 <!-- 22. Split Your Bootstrap Row -->
 <!-- 
@@ -395,9 +1515,16 @@ Create two div elements within your row, both with the class col-xs-6.
 Tests
 Waiting:Two div class="col-xs-6" elements should be nested within your div class="row" element.
 Waiting:All your div elements should have closing tags.
-
 -->
-
+<div class="container-fluid">
+    <h3 class="text-primary text-center">jQuery Playground</h3>
+    <div class="row">
+        <div class="col-xs-6">
+         </div>
+        <div class="col-xs-6">
+         </div>
+    </div>
+  </div>
 
 
 <!-- 23. Create Bootstrap Wells -->
@@ -410,8 +1537,23 @@ Tests
 Waiting:You should add a div element with the class well inside each of your div elements with the class col-xs-6
 Waiting:Both of your div elements with the class col-xs-6 should be nested within your div element with the class row.
 Waiting:All your div elements should have closing tags.
-
 -->
+<div class="container-fluid">
+    <h3 class="text-primary text-center">jQuery Playground</h3>
+    <div class="row">
+      <div class="col-xs-6">
+          <div class="well">
+  
+         </div>
+      </div>
+      <div class="col-xs-6">
+         <div class="well">
+  
+         </div>
+      </div>
+    </div>
+  </div>
+
 
 
 
@@ -426,7 +1568,28 @@ Waiting:Three button elements should be nested within each of your div elements 
 Waiting:You should have a total of 6 button elements.
 Waiting:All of your button elements should have closing tags.
 -->
-
+<div class="container-fluid">
+    <h3 class="text-primary text-center">jQuery Playground</h3>
+    <div class="row">
+      <div class="col-xs-6">
+        <div class="well">
+          <button class="well"></button>
+          <button class="well"></button>
+          <button class="well"></button>
+  
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <div class="well">
+  
+  <button class="well"></button>
+          <button class="well"></button>
+          <button class="well"></button>
+  
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -439,8 +1602,25 @@ Tests
 Waiting:You should apply the btn class to each of your button elements.
 Waiting:You should apply the btn-default class to each of your button elements.
 -->
-
-
+<div class="container-fluid">
+    <h3 class="text-primary text-center">jQuery Playground</h3>
+    <div class="row">
+      <div class="col-xs-6">
+        <div class="well">
+          <button class="btn btn-default"></button>
+          <button class="btn btn-default"></button>
+          <button class="btn btn-default"></button>
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <div class="well">
+          <button class="btn btn-default"></button>
+          <button class="btn btn-default"></button>
+          <button class="btn btn-default"></button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 <!-- 26. Create a Class to Target with jQuery Selectors-->
 <!-- 
@@ -451,6 +1631,26 @@ Give each of your button elements the class target.
 Tests
 Waiting:You should apply the target class to each of your button elements.
 -->
+<div class="container-fluid">
+    <h3 class="text-primary text-center">jQuery Playground</h3>
+    <div class="row">
+      <div class="col-xs-6">
+        <div class="well">
+          <button class="btn btn-default target"></button>
+          <button class="btn btn-default target"></button>
+          <button class="btn btn-default target"></button>
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <div class="well">
+          <button class="btn btn-default target"></button>
+          <button class="btn btn-default target"></button>
+          <button class="btn btn-default target"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 
 
@@ -471,6 +1671,25 @@ Tests
 Waiting:Your left well should have the id of left-well.
 Waiting:Your right well should have the id of right-well.
 -->
+<div class="container-fluid">
+    <h3 class="text-primary text-center">jQuery Playground</h3>
+    <div class="row">
+      <div class="col-xs-6">
+        <div class="well" id="left-well">
+          <button class="btn btn-default target"></button>
+          <button class="btn btn-default target"></button>
+          <button class="btn btn-default target"></button>
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <div class="well" id="right-well">
+          <button class="btn btn-default target"></button>
+          <button class="btn btn-default target"></button>
+          <button class="btn btn-default target"></button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -489,6 +1708,28 @@ Waiting:One h4 element should have the text #left-well.
 Waiting:One h4 element should have the text #right-well.
 Waiting:All of your h4 elements should have closing tags.
 -->
+<div class="container-fluid">
+    <h3 class="text-primary text-center">jQuery Playground</h3>
+    <div class="row">
+      <div class="col-xs-6">
+          <h4>#left-well</h4>
+        <div class="well" id="left-well">
+          <button class="btn btn-default target"></button>
+          <button class="btn btn-default target"></button>
+          <button class="btn btn-default target"></button>
+        </div>
+      </div>
+      <div class="col-xs-6">
+          <h4>#right-well</h4>
+        <div class="well" id="right-well">
+          <button class="btn btn-default target"></button>
+          <button class="btn btn-default target"></button>
+          <button class="btn btn-default target"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 
 
@@ -506,8 +1747,30 @@ Waiting:One button element should have the id target3.
 Waiting:One button element should have the id target4.
 Waiting:One button element should have the id target5.
 Waiting:One button element should have the id target6.
-
  -->
+ <div class="container-fluid">
+    <h3 class="text-primary text-center">jQuery Playground</h3>
+    <div class="row">
+      <div class="col-xs-6">
+        <h4>#left-well</h4>
+        <div class="well" id="left-well">
+          <button class="btn btn-default target" id="target1"></button>
+          <button class="btn btn-default target" id="target2"></button>
+          <button class="btn btn-default target" id="target3"></button>
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <h4>#right-well</h4>
+        <div class="well" id="right-well">
+          <button class="btn btn-default target" id="target4"></button>
+          <button class="btn btn-default target" id="target5"></button>
+          <button class="btn btn-default target" id="target6"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 
 
  <!-- 30. Label Bootstrap Buttons-->
@@ -523,6 +1786,29 @@ Waiting:Your button element with the id target4 should have the text #target4.
 Waiting:Your button element with the id target5 should have the text #target5.
 Waiting:Your button element with the id target6 should have the text #target6.
 -->
+<div class="container-fluid">
+    <h3 class="text-primary text-center">jQuery Playground</h3>
+    <div class="row">
+      <div class="col-xs-6">
+        <h4>#left-well</h4>
+        <div class="well" id="left-well">
+          <button class="btn btn-default target" id="target1">#target1</button>
+          <button class="btn btn-default target" id="target2">#target2</button>
+          <button class="btn btn-default target" id="target3">#target3</button>
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <h4>#right-well</h4>
+        <div class="well" id="right-well">
+          <button class="btn btn-default target" id="target4">#target4</button>
+          <button class="btn btn-default target" id="target5">#target5</button>
+          <button class="btn btn-default target" id="target6">#target6</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 
 
 
@@ -542,4 +1828,25 @@ Waiting:You should close your comment with -->.
 Waiting:You should have the same number of comment openers and closers.
 -->
 
-
+<!-- Code below this line should not be changed -->
+<div class="container-fluid">
+    <h3 class="text-primary text-center">jQuery Playground</h3>
+    <div class="row">
+      <div class="col-xs-6">
+        <h4>#left-well</h4>
+        <div class="well" id="left-well">
+          <button class="btn btn-default target" id="target1">#target1</button>
+          <button class="btn btn-default target" id="target2">#target2</button>
+          <button class="btn btn-default target" id="target3">#target3</button>
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <h4>#right-well</h4>
+        <div class="well" id="right-well">
+          <button class="btn btn-default target" id="target4">#target4</button>
+          <button class="btn btn-default target" id="target5">#target5</button>
+          <button class="btn btn-default target" id="target6">#target6</button>
+        </div>
+      </div>
+    </div>
+  </div>
