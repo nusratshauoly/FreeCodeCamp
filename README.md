@@ -121,15 +121,15 @@ More Info [here](./Day-22-basic-javascript/Day-22.md)
 
 ## Day-23  
 I am learning Basic Javascript  
-I learned bootstrap 
+
 
 More Info [here](./Day-23/Basic-Javascript/Day-23.md)
-More Info [here](./Day-23/Bootstrap/bootstrap.md)
+
 
 ## Day-24  
-I am learning 
+I learned bootstrap 
 
-More Info [here](./Day-24/Day-24.md)
+More Info [here](./Day-24/Bootstrap/bootstrap.md)
 
 ## Day-25  
 I am learning 

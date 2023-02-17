@@ -1,4 +1,5 @@
-# Day-23
+# Day-24
+
 
 I learnt the following:
 
