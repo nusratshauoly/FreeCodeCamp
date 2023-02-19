@@ -1,8 +1,6 @@
 # Day-26
 
+Complete a project on bootstrap
 
-I learnt the following:
-1. 
-
-Check the HTML code [here](./.html)  
-Check the CSS code [here](./.css)
+Check the HTML code [here](./index.html)  
+Check the CSS code [here](./assets/style.css)

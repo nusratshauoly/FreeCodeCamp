@@ -35,7 +35,6 @@ I Learned Typography by Building a Nutrition Label.
 More Info [here](./Day-6/Poto-Gallery/readme.md)
 More Info [here](./Day-6/Nutrition-Label/readme.md)
 
-
 ## Day-7
 I Learned Accessibility by Building a Quiz. 
 
@@ -62,25 +61,25 @@ I am learning Intermediate CSS by Building a Picasso Painting.
 More Info [here](./Day-11/Day-11.md)
 
 ## Day-12  
-I learned CSS variables by building a city skyline
-I learned CSS grid by building a magazine    
+I learned CSS variables by building a city skyline.
+I learned CSS grid by building a magazine.   
 
 More Info [here](.//Day-12/CSS-Variables-by-Building-a-City-Skyline/readme.md)
 More Info [here](.//Day-12/CSS-grid-by-building-a-magazine/readme.md)
 ## Day-13
-I learned CSS animation by building a Ferris Wheel  
-I learned CSS Transforms by Building a Penguin
+I learned CSS animation by building a Ferris Wheel.  
+I learned CSS Transforms by Building a Penguin.
 
 More Info [here](./Day-13/CSS-animation-by-building-a-Ferris-Wheel/readme.md)
 More Info [here](./Day-13/CSS-transforms-by-building-a-penguin/readme.md)
 
 ## Day-14  
-I built technical documentation page 
+I built technical documentation page. 
 
 More Info [here](./Day-14/technical-documentation-page/readme.md)  
   
 ## Day-15  
-I built product landing page 
+I built product landing page. 
 
 More Info [here](./Day-15/product-landing-page/readme.md)   
 
@@ -105,40 +104,37 @@ I am learning Basic Javascript.
 More Info [here](./Day-19-basic-javascript/Day-19.md)    
 
 ## Day-20  
-I am learning Basic Javascript    
+I am learning Basic Javascript.    
 
 More Info [here](./Day-20-basic-javascript/Day-20.md)    
 
 ## Day-21  
-I am learning Basic Javascript    
+I am learning Basic Javascript.    
 
 More Info [here](./Day-21-basic-javascript/Day-21.md) 
 
 ## Day-22  
-I am learning Basic Javascript  
+I am learning Basic Javascript.  
 
 More Info [here](./Day-22-basic-javascript/Day-22.md) 
 
 ## Day-23  
-I am learning Basic Javascript  
-
+I am learning Basic Javascript.  
 
 More Info [here](./Day-23/Basic-Javascript/Day-23.md)
 
-
 ## Day-24  
-I am learning Basic Javascript  
-
+I am learning Basic Javascript.  
 
 More Info [here](./Day-24/Basic-Javascript/Day-24.md)
 
 ## Day-25  
-I learned bootstrap 
+learned bootstrap. 
 
 More Info [here](./Day-24/Bootstrap/bootstrap.md)
 
 ## Day-26  
-I am learning 
+Completed a project on bootstrap.
 
 More Info [here](./Day-26/Day-26.md)
 
