@@ -139,19 +139,19 @@ Completed a project on bootstrap.
 More Info [here](./Day-26/Day-26.md)
 
 ## Day-27  
-I am Learning 
+I am Learning ES6.
 
-More Info [here](./Day-27/Day-27.md)
+More Info [here](./Day-27-ES6/Day-27.md)
 
 ## Day-28  
-I am learning 
+I am learning ES6.
 
-More Info [here](./Day-28/Day-28.md)
+More Info [here](./Day-28-ES6/Day-28.md)
 
 ## Day-29  
-I am learning  
+I am learning ES6.
 
-More Info [here](./Day-29/Day-29.md)
+More Info [here](./Day-29-ES6/Day-29.md)
 
 ## Day-30  
 I am learning  
