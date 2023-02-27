@@ -63,13 +63,20 @@ This exercise is designed to illustrate the difference between how var and let k
 var should not exist in code.
 Waiting:The variable i declared in the if statement should equal the string block scope.
 Waiting:checkScope() should return the string function scope
-
-
-
 */
 
+function checkScope() {
+  "use strict";
+  let i = 'function scope';
+  if (true) {
+    let i = 'block scope';
+    console.log('Block scope i is: ', i);
+  }
+  console.log('Function scope i is: ', i);
+  return i;
+}
 
-
+console.log(checkScope());
 
 //2. Mutate an Array Declared with const
 /*
@@ -96,7 +103,17 @@ Waiting:s should be a constant variable (by using const).
 Waiting:You should not change the original array declaration.
 Waiting:s should be equal to [2, 5, 7].
 */
+const s = [5, 7, 2];
+function editInPlace() {
+  // Only change code below this line
 
+  // Using s = [2, 5, 7] would be invalid
+s[0] = 2;
+s[1] = 5;
+s[2] = 7;
+  // Only change code above this line
+}
+console.log(editInPlace());
 
 
 
@@ -123,11 +140,24 @@ Waiting:MATH_CONSTANTS should be a constant variable (by using const).
 Waiting:You should not change the original declaration of MATH_CONSTANTS.
 Waiting:PI should equal 3.14.
 
-
 */
+function freezeObj() {
+  const MATH_CONSTANTS = {
+    PI: 3.14
+  };
+  // Only change code below this line
+ Object.freeze();
 
-
-
+  // Only change code above this line
+  try {
+    MATH_CONSTANTS.PI = 3.14;
+  } catch(ex) {
+    console.log(ex);
+  }
+  return MATH_CONSTANTS.PI;
+}
+const PI = freezeObj();
+console.log(PI);
 
 
 //4. Use Arrow Functions to Write Concise Anonymous Functions
@@ -159,7 +189,10 @@ Waiting:magic should be a function.
 Waiting:magic() should return the correct date.
 Waiting:The function keyword should not be used.
 */
-
+const magic = () => {
+  return new Date();
+};
+console.log(magic());
 
 
 
@@ -190,7 +223,9 @@ Waiting:The function keyword should not be used.
 
 */
 
+const myConcat = (arr1, arr2) => arr1.concat(arr2);
 
+console.log(myConcat([1, 2], [3, 4, 5]));
 
 
 
@@ -215,7 +250,7 @@ Waiting:The result of increment(5) should be 6.
 Waiting:A default parameter value of 1 should be used for value.
 */
 
-
+ggjkkkhkggjgjjffhhf
 
 
 
