@@ -77,6 +77,7 @@ function checkScope() {
 }
 
 console.log(checkScope());
+hgjgjgjgjgjgj
 
 //2. Mutate an Array Declared with const
 /*
@@ -250,7 +251,7 @@ Waiting:The result of increment(5) should be 6.
 Waiting:A default parameter value of 1 should be used for value.
 */
 
-ggjkkkhkggjgjjffhhf
+
 
 
 
