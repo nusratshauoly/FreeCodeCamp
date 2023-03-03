@@ -77,7 +77,7 @@ function checkScope() {
 }
 
 console.log(checkScope());
-hgjgjgjgjgjgj
+
 
 //2. Mutate an Array Declared with const
 /*
@@ -142,20 +142,18 @@ Waiting:You should not change the original declaration of MATH_CONSTANTS.
 Waiting:PI should equal 3.14.
 
 */
-function freezeObj() {
-  const MATH_CONSTANTS = {
-    PI: 3.14
-  };
-  // Only change code below this line
- Object.freeze();
+function freezeObj(){
+    const MATH_CONSTANTS = {
+       PI: 3.14
+    };
+Object.freeze(MATH_CONSTANTS);    
 
-  // Only change code above this line
-  try {
-    MATH_CONSTANTS.PI = 3.14;
-  } catch(ex) {
-    console.log(ex);
-  }
-  return MATH_CONSTANTS.PI;
+try{
+  MATH_CONSTANTS.PI = 99;
+}catch(ex){
+  console.log(ex);
+};
+return MATH_CONSTANTS.PI;
 }
 const PI = freezeObj();
 console.log(PI);
@@ -190,10 +188,6 @@ Waiting:magic should be a function.
 Waiting:magic() should return the correct date.
 Waiting:The function keyword should not be used.
 */
-const magic = () => {
-  return new Date();
-};
-console.log(magic());
 
 
 
@@ -224,9 +218,7 @@ Waiting:The function keyword should not be used.
 
 */
 
-const myConcat = (arr1, arr2) => arr1.concat(arr2);
 
-console.log(myConcat([1, 2], [3, 4, 5]));
 
 
 
