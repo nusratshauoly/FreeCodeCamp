@@ -1,8 +1,4 @@
 # Day-25
 
 
-I learnt the following:
-1. 
-
-Check the HTML code [here](./.html)  
-Check the CSS code [here](./.css)
+Check the Javascript code [here](./index.js)  

@@ -104,54 +104,42 @@ I am learning Basic Javascript.
 More Info [here](./Day-19-basic-javascript/Day-19.md)    
 
 ## Day-20  
-I am learning Basic Javascript.    
-
-More Info [here](./Day-20-basic-javascript/Day-20.md)    
-
-## Day-21  
-I am learning Basic Javascript.    
-
-More Info [here](./Day-21-basic-javascript/Day-21.md) 
-
-## Day-22  
-I am learning Basic Javascript.  
-
-More Info [here](./Day-22-basic-javascript/Day-22.md) 
-
-## Day-23  
-I am learning Basic Javascript.  
-
-More Info [here](./Day-23/Basic-Javascript/Day-23.md)
-
-## Day-24  
-I am learning Basic Javascript.  
-
-More Info [here](./Day-24/Basic-Javascript/Day-24.md)
-
-## Day-25  
 learned bootstrap. 
 
-More Info [here](./Day-24/Bootstrap/bootstrap.md)
+More Info [here](./Day-20-bootstrap-project/Bootstrap/bootstrap.md)   
 
-## Day-26  
+## Day-21  
 Completed a project on bootstrap.
 
-More Info [here](./Day-26/Day-26.md)
+More Info [here](./Day-21/Day-21.md)  
 
-## Day-27  
+## Day-22  
 I am Learning ES6.
 
-More Info [here](./Day-27-ES6/Day-27.md)
+More Info [here](./Day-22-ES6/Day-22.md)  
+
+## Day-23  
+I learned regular expression
+
+More Info [here](./Day-23-regular-expression/Day-23.md) 
+
+## Day-24  
+I am learning
+
+## Day-25  
+
+
+## Day-26  
+
+
+## Day-27  
+
 
 ## Day-28  
-I am learning ES6.
 
-More Info [here](./Day-28-ES6/Day-28.md)
 
 ## Day-29  
-I am learning ES6.
 
-More Info [here](./Day-29-ES6/Day-29.md)
 
 ## Day-30  
 I am learning  
