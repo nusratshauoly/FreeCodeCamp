@@ -566,8 +566,26 @@ failuresList should be an array containing result failure messages.
 Waiting:failuresList should be equal to the specified output.
 Waiting:Template strings and expression interpolation should be used.
 Waiting:An iterator should be used.
-
 */
+
+const result ={
+  success: ["max-length", "no-amd", "prefer-arrow-functions"],
+  failure: ["no-var", "var-on-top", "linebreak"],
+  skipped:["no-extra-semi", "no-dup-keys"]
+};
+function makeList(arr){
+   const failureItems = [];
+   for(let i = 0; i < arr.length; i++){
+     failureItems.push(`<li class = "text-warning">${arr[i]}</li>`);
+  }
+  return failureItems;
+}
+
+const failuresList = makeList(result.failure);
+console.log(failuresList);
+
+
+
 
 // 16. Write Concise Object Literal Declarations Using Object Property Shorthand
 /*
@@ -589,7 +607,14 @@ Waiting:Your code should not use key:value.
 */
 
 
-
+const createPerson = (name, age, gender) => {
+  return {
+    name,
+    age, 
+    gender
+  };
+};
+console.log(createPerson("Zodiac Hasbro", 56, "male"));
 
 
 // 17. Write Concise Declarative Functions with ES6
