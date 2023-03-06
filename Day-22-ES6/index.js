@@ -641,7 +641,14 @@ Waiting:Traditional function expression should not be used.
 Waiting:setGear should be a declarative function.
 Waiting:bicycle.setGear(48) should change the gear value to 48.
 */
-
+const bicycle = {
+  gear : 2,
+  setGear(newGear){
+    this.gear = newGear;
+  }
+};
+bicycle.setGear(3);
+console.log(bicycle.gear);
 
 
 // 18. Use class Syntax to Define a Constructor Function
@@ -691,9 +698,13 @@ Waiting:The class keyword should be used.
 Waiting:Vegetable should be able to be instantiated.
 Waiting:carrot.name should return carrot.
 */
-
-
-
+class Vegetable{
+  constructor(name){
+    this.name = name;
+  }
+}
+const carrot = new Vegetable('carrot');
+console.log(carrot.name);
 
 
 //  19. Use getters and setters to Control Access to an Object
@@ -748,14 +759,24 @@ Waiting:When instantiated with a Fahrenheit value, Thermostat should set the cor
 Waiting:A getter should be defined.
 Waiting:A setter should be defined.
 Waiting:Calling the setter with a Celsius value should set the temperature.
-
-
 */
+class Thermostat{
+  constructor(temp){
+    this._temp = 5/9 * (temp - 32);
+  }
+  get temperature(){
+    return this._temp;
+  }
+  set temperature(updatedTemp){
+    this._temp = updatedTemp;
+  }
+}
 
-
-
-
-
+const thermos = new Thermostat(76);
+let temp = thermos.temperature;
+thermos.temperature= 26;
+temp = thermos.temperature;
+console.log(temp);
 
 // 20. Create a Module Script
 /*
@@ -771,12 +792,13 @@ Waiting:Your script tag should have the type attribute with a value of module.
 Waiting:Your script tag should have a src of index.js.
 */
 
-
-
-
-
-
-
+<html>
+  <body>
+    <!-- Only change code below this line -->
+<script type= "module" src = "index.js"></script>
+    <!-- Only change code above this line -->
+  </body>
+</html>
 
 // 21. Use export to Share a Code Block
 /*
