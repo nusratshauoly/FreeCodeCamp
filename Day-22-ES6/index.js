@@ -823,7 +823,13 @@ Waiting:You should properly export uppercaseString.
 Waiting:You should properly export lowercaseString.
 
 */
+export const uppercaseString = (string) => {
+  return string.toUpperCase();
+}
 
+export const lowercaseString = (string) => {
+  return string.toLowerCase()
+}
 
 
 // 22. Reuse JavaScript Code Using import
@@ -842,7 +848,11 @@ You should properly import uppercaseString.
 Waiting:You should properly import lowercaseString.
 */
 
+import { uppercaseString, lowercaseString } from './string_functions.js';
+// Only change code above this line
 
+uppercaseString("hello");
+lowercaseString("WORLD!");
 
 
 
@@ -861,7 +871,11 @@ The code in this file requires the contents of the file: string_functions.js, th
 Your code should properly use import * as syntax.
 */
 
+import * as stringFunctions from './string_functions.js';
+// Only change code above this line
 
+stringFunctions.uppercaseString("hello");
+stringFunctions.lowercaseString("WORLD!");
 
 
 
@@ -889,10 +903,9 @@ The following function should be the fallback value for the module. Please add t
 
 Waiting:Your code should use an export fallback.
 */
-
-
-
-
+export default function subtract(x, y){
+  return x - y;
+}
 
 // 25. Import a Default Export
 /*
@@ -905,10 +918,10 @@ In the following code, import the default export from the math_functions.js file
 
 Waiting:You should properly import subtract from math_functions.js.
 */
+import subtract from './math_functions.js';  
+// Only change code above this line
 
-
-
-
+subtract(7, 4);
 
 
 //  26. Create a JavaScript Promise
@@ -923,7 +936,9 @@ Create a new promise called makeServerRequest. Pass in a function with resolve a
 You should assign a promise to a declared variable named makeServerRequest.
 Waiting:Your promise should receive a function with resolve and reject as parameters.
 */
+const makeServerRequest = new Promise((resolve, reject) => {
 
+});
 
 
 
@@ -944,12 +959,15 @@ Make the promise handle success and failure. If responseFromServer is true, call
 
 Waiting:resolve should be called with the expected string when the if condition is true.
 Waiting:reject should be called with the expected string when the if condition is false.
-
 */
-
-
-
-
+const makeServerRequest = new Promise((resolve, reject) => {
+  let responseFromServer;
+  if(responseFromServer){
+    resolve("We got the data");
+  }else{
+    reject("Data not received");
+  }
+});
 
 // 28. Handle a Fulfilled Promise with then
 /*
@@ -965,9 +983,18 @@ Add the then method to your promise. Use result as the parameter of its callback
 Waiting:You should call the then method on the promise.
 Waiting:Your then method should have a callback function with result as its parameter.
 Waiting:You should log result to the console.
-
 */
-
+const makeServerRequest = new Promise((resolve, reject) => {
+  let responseFromServer = true;
+  if(responseFromServer){
+    resolve("We got the Data");
+  } else {
+    reject("Data not received");
+  }
+});
+makeServerRequest.then(result => {
+console.log(result);
+})
 
 
 
@@ -987,3 +1014,15 @@ Waiting:You should call the catch method on the promise.
 Waiting:Your catch method should have a callback function with error as its parameter.
 Waiting:You should log error to the console.
 */
+const makeServerRequest = new Promise ((resolve, reject) => {
+  let responseFromServer = false;
+  if(responseFromServer){
+    resolve("We got the Data");
+  }
+  else{
+    reject("Data not received");
+  }
+});
+makeServerRequest.catch(error => {
+  console.log(error);
+})
