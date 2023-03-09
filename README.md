@@ -124,8 +124,9 @@ I learned regular expression
 More Info [here](./Day-23-regular-expression/Day-23.md) 
 
 ## Day-24  
-I am learning
+I learned Javascript DEbugging.
 
+More Info [here](./Day-24-debugging/Day-24.md) 
 ## Day-25  
 
 

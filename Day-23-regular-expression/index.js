@@ -557,7 +557,10 @@ Waiting:Your regex should find 30 alphanumeric characters in the string How vexi
 Waiting:Your regex should find 36 alphanumeric characters in the string 123 456 7890 ABC def GHI jkl MNO pqr STU vwx YZ.
 
 */
-
+let quoteSample = "The five boxing wizards jump quickly.";
+let alphabetRegexV2 = /\w/ig; // Change this line
+let result = quoteSample.match(alphabetRegexV2).length;
+console.log(result);
 
 
 
@@ -588,6 +591,14 @@ Waiting:Your regex should find 6 non-alphanumeric characters in the string How v
 Waiting:Your regex should find 12 non-alphanumeric characters in the string 123 456 7890 ABC def GHI jkl MNO pqr STU vwx YZ.
 */
 
+let quoteSample = "The five boxing wizards jump quickly.";
+let nonAlphabetRegex = /\W/ig; // Change this line
+let result = quoteSample.match(nonAlphabetRegex).length;
+console.log(result);
+
+
+
+
 
 
 
@@ -607,8 +618,12 @@ Waiting:Your regex should find 3 digits in the string 101 Dalmatians.
 Waiting:Your regex should find no digits in the string One, Two, Three.
 Waiting:Your regex should find 2 digits in the string 21 Jump Street.
 Waiting:Your regex should find 4 digits in the string 2001: A Space Odyssey.
-
 */
+
+let movieName = "2001: A Space Odyssey";
+let numRegex = /\d/ig; // Change this line
+let result = movieName.match(numRegex).length;
+console.log(result);
 
 
 
@@ -633,7 +648,10 @@ Waiting:Your regex should find 12 non-digits in the string 21 Jump Street.
 Waiting:Your regex should find 17 non-digits in the string 2001: A Space Odyssey.
 
 */
-
+let movieName = "2001: A Space Odyssey";
+let noNumRegex = /\D/ig; // Change this line
+let result = movieName.match(noNumRegex).length;
+console.log(result);
 
 
 
