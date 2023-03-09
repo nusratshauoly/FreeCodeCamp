@@ -137,7 +137,10 @@ Waiting:Your regex codingRegex should search for the string coding
 Waiting:You should use the .match() method.
 
 */
-
+let extractStr = "Extract the word 'coding' from this string.";
+let codingRegex = /coding/; // Change this line
+let result = extractStr.match(codingRegex); // Change this line
+console.log(result);
 
 
 
@@ -170,7 +173,10 @@ Waiting:Your match should match both occurrences of the word Twinkle
 Waiting:Your match result should have two elements in it.
 */
 
-
+let twinkleStar = "Twinkle, twinkle, little star";
+let starRegex = /twinkle/gi;
+let result = twinkleStar.match(starRegex);
+console.log(result);
 
 
 
@@ -202,7 +208,10 @@ Waiting:Your regex unRegex should match bun in the string She got fired from the
 Waiting:Your regex unRegex should not match the string There is a bug in my code.
 Waiting:Your regex unRegex should not match the string Catch me if you can.
 */
-
+let exampleStr = "Let's have fun with regular expressions!";
+let unRegex = /un./;
+let result = unRegex.test(exampleStr);
+console.log(result);
 
 
 
@@ -237,10 +246,12 @@ Waiting:Your regex vowelRegex should use a character class.
 Waiting:Your regex vowelRegex should use the global flag.
 Waiting:Your regex vowelRegex should use the case insensitive flag.
 Waiting:Your regex should not match any consonants.
-
 */
 
-
+let quoteSample = "Beware of bugs in the above code; I have only proved it correct, not tried it.";
+let vowelRegex = /[aeiou]/ig; // Change this line
+let result = quoteSample.match(vowelRegex); // Change this line
+console.log(result);
 
 
 
@@ -269,15 +280,19 @@ Note: Be sure to match both uppercase and lowercase letters.
 Your regex alphabetRegex should match 35 items.
 Waiting:Your regex alphabetRegex should use the global flag.
 Waiting:Your regex alphabetRegex should use the case insensitive flag.
-
 */
+
+let quoteSample = "The quick brown fox jumps over the lazy dog.";
+let alphabetRegex = /[a-z]/ig; // Change this line
+let result = quoteSample.match(alphabetRegex); // Change this line
+console.log(result);
+
 
 
 
 
 
 // 10. Match Numbers and Letters of the Alphabet
-
 /*
 Using the hyphen (-) to match a range of characters is not limited to letters. It also works to match a range of numbers.
 
@@ -294,7 +309,10 @@ Your regex myRegex should match 17 items.
 Waiting:Your regex myRegex should use the global flag.
 Waiting:Your regex myRegex should use the case insensitive flag.
 */
-
+let quoteSample = "Blueberry 3.141592653s are delicious.";
+let myRegex = /[h-s2-6]/ig; // Change this line
+let result = quoteSample.match(myRegex); // Change this line
+console.log(result);
 
 
 
@@ -315,6 +333,12 @@ Your regex myRegex should match 9 items.
 Waiting:Your regex myRegex should use the global flag.
 Waiting:Your regex myRegex should use the case insensitive flag.
 */
+
+let quoteSample = "3 blind mice.";
+let myRegex = /[^aeiou0-9]/ig; // Change this line
+let result = quoteSample.match(myRegex); // Change this line
+console.log(result);
+
 
 
 
@@ -337,7 +361,10 @@ Your regex myRegex should use the + sign to match one or more s characters.
 Waiting:Your regex myRegex should match 2 items.
 Waiting:The result variable should be an array with two matches of ss
 */
-
+let difficultSpelling = "Mississippi";
+let myRegex = /s+/ig; // Change this line
+let result = difficultSpelling.match(myRegex);
+console.log(result);
 
 
 
@@ -367,10 +394,14 @@ Waiting:Your regex should match the string Aaaaaaaaaaaaaaaa in chewieQuote.
 Waiting:Your regex chewieRegex should match 16 characters in chewieQuote.
 Waiting:Your regex should not match any characters in the string He made a fair move. Screaming about it can't help you.
 Waiting:Your regex should not match any characters in the string Let him have it. It's not wise to upset a Wookiee.
-
 */
 
+let chewieQuote = "Aaaaaaaaaaaaaaaarrrgh!";
+let chewieRegex = /Aa*/; // Change this line
+// Only change code above this line
 
+let result = chewieQuote.match(chewieRegex);
+console.log(result);
 
 
 
@@ -393,7 +424,10 @@ The result variable should be an array with <h1> in it
 Waiting:myRegex should use lazy matching
 Waiting:myRegex should not include the string h1
 */
-
+let text = "<h1>Winter is coming</h1>";
+let myRegex = /<.*?>/; // Change this line
+let result = text.match(myRegex);
+console.log(result);
 
 
 
@@ -426,10 +460,12 @@ Waiting:Your regex should match five criminals (CCCCC) in the string P6P2P7P4P5C
 Waiting:Your regex should not match any criminals in the empty string ""
 Waiting:Your regex should not match any criminals in the string P1P2P3
 Waiting:Your regex should match fifty criminals (CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC) in the string P2P1P5P4CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCP3.
-
 */
 
-
+let crowd = "P1P2P3P4P5P6CCCP7P8P9";
+let reCriminals = /C+/; // Change this line
+let result = crowd.match(reCriminals);
+console.log(result);
 
 
 
@@ -452,10 +488,12 @@ Your regex should search for the string Cal with a capital letter.
 Waiting:Your regex should not use any flags.
 Waiting:Your regex should match the string Cal at the beginning of the string.
 Waiting:Your regex should not match the string Cal in the middle of a string.
-
 */
 
-
+let rickyAndCal = "Cal and Ricky both like racing.";
+let calRegex = /^Cal/; // Change this line
+let result = calRegex.test(rickyAndCal);
+console.log(result);
 
 
 
@@ -481,7 +519,10 @@ Waiting:Your regex should not use any flags.
 Waiting:You should match caboose at the end of the string The last car on a train is the caboose
 
 */
-
+let caboose = "The last car on a train is the caboose";
+let lastRegex = /caboose$/; // Change this line
+let result = lastRegex.test(caboose);
+console.log(result);
 
 
 
