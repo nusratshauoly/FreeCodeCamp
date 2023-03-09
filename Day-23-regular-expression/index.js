@@ -17,7 +17,10 @@ You should use .test() to test the regex.
 Waiting:Your result should return true.
 */   
 
-
+let myString = "Hello, World!";
+let myRegex = /Hello/;
+let result = myRegex.test(myString); // Change this line
+console.log(result);
 
 
 
@@ -45,7 +48,9 @@ Your regex waldoRegex should find the string Waldo
 Waiting:Your regex waldoRegex should not search for anything else.
 Waiting:You should perform a literal string match with your regex.
 */
-
+let waldoIsHiding = "Somewhere Waldo is hiding in this text.";
+let waldoRegex = /Waldo/; // Change this line
+let result = waldoRegex.test(waldoIsHiding);
 
 
 
@@ -69,8 +74,11 @@ Waiting:Your regex petRegex should return true for the string Liz has a pet cat.
 Waiting:Your regex petRegex should return false for the string Kara has a pet dolphin.
 Waiting:Your regex petRegex should return true for the string Alice has a pet fish.
 Waiting:Your regex petRegex should return false for the string Jimmy has a pet computer.
-
 */
+
+let petString = "James has a pet cat.";
+let petRegex = /dog|cat|bird|fish/;
+let result = petRegex.test(petString); 
 
 
 
@@ -98,7 +106,9 @@ Waiting:Your regex should match the string FrEeCodECamp
 Waiting:Your regex should match the string FReeCodeCAmp
 */
 
-
+let myString = "freeCodeCamp";
+let fccRegex = /freeCodeCamp/i; // Change this line
+let result = fccRegex.test(myString);
 
 
 // 5. Extract Matches
