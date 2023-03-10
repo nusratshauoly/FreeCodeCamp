@@ -3,95 +3,95 @@
 ## Day-1
 I am learned HTML by Building a Cat Photo App.
 
-More Info [here](./Day-1/Day-1.md)
+More Info [here](./Day-1-Learn-HTML-by-Building-a-Cat-Photo-App/Day-1.md)
 
 ## Day-2
 I am learned CSS by building Basic CSS by Building a Cafe Menu. 
  
-More Info [here](./Day-2/Day-2.md)
+More Info [here](./Day-2-Learn-CSS-by-Building-a-Cafe-Menu/Day-2.md)
 
 ## Day-3
 I am learned CSS by building a Set of Colored Markers.  
 
-More Info [here](./Day-3/Day-3.md)
+More Info [here](./Day-3-Learn-CSS-Colors-by-Building-a-Set-of-Colored-Markers/Day-3.md)
 
 ## Day-4
 I am learned HTML Forms by Building a Registration Form. 
 
-More Info [here](./Day-4/Day-4.md)
+More Info [here](./Day-4-Learn-HTML-Forms-by-Building-a-Registration-Form/Day-4.md)
 
 ## Day-5
 I learned to build Survey Form.
 I learned to build a CSS Box Model by Building a Rothko Painting .
 
-More Info [here](./Day-5/survey-form/Day-5.md)
-More Info [here](./Day-5/rothko-painting/readme.md)
+More Info [here](./Day-5-Survey-Form-and-Learn-the-CSS-Box-Model-by-Building-a-Rothko-Painting/survey-form/Day-5.md)
+More Info [here](./Day-5-Survey-Form-and-Learn-the-CSS-Box-Model-by-Building-a-Rothko-Painting/rothko-painting/readme.md)
 
 ## Day-6
 I learned CSS Flexbox by Building a Photo Gallery.
 I Learned Typography by Building a Nutrition Label.
 
 
-More Info [here](./Day-6/Poto-Gallery/readme.md)
-More Info [here](./Day-6/Nutrition-Label/readme.md)
+More Info [here](./Day-6-CSS-Flexbox-by-Building-a-Photo-Gallery-and-Learn-Typography-by-Building-a-Nutrition-Label/Photo-Gallery/readme.md)
+More Info [here](./Day-6-CSS-Flexbox-by-Building-a-Photo-Gallery-and-Learn-Typography-by-Building-a-Nutrition-Label/Nutrition-Label/readme.md)
 
 ## Day-7
 I Learned Accessibility by Building a Quiz. 
 
-More Info [here](./Day-7/Building-a-quiz/readme.md)  
+More Info [here](./Day-7-Learn-Accessibility-by-Building-Quiz/Building-a-quiz/readme.md)  
 
 ## Day-8  
 Build a tribute page.    
 
-More Info [here](./Day-8/Day-8.md)
+More Info [here](./Day-8-Tribute-Page/Day-8.md)
 
 ## Day-9  
 I am learning CSS Pseudo Selector by building a Balance Sheet.   
 
-More Info [here](./Day-9/balance-sheet/Day-9.md)  
+More Info [here](./Day-9-Learn-More-About-CSS-Pseudo-Selectors-By-Building-A-Balance-Sheet/balance-sheet/Day-9.md)  
 
 ## Day-10  
 I learned Responsive Design by building a Piano.   
 
-More Info [here](./Day-10/Day-10.md)  
+More Info [here](./Day-10-Learn-Responsive-Web-Design-by-Building-a-Piano/Day-10.md)  
 
 ## Day-11  
 I am learning Intermediate CSS by Building a Picasso Painting.   
 
-More Info [here](./Day-11/Day-11.md)
+More Info [here](./Day-11-Learn-Intrmediate-CSS-by-Building-a-Picasso-Painting/Day-11.md)
 
 ## Day-12  
 I learned CSS variables by building a city skyline.
 I learned CSS grid by building a magazine.   
 
-More Info [here](.//Day-12/CSS-Variables-by-Building-a-City-Skyline/readme.md)
-More Info [here](.//Day-12/CSS-grid-by-building-a-magazine/readme.md)
+More Info [here](./Day-12-CSS-Variables-by-Building-a-City-Skyline-and-CSS-Grid-by-Building-a-Magazine/CSS-Variables-by-Building-a-City-Skyline/readme.md)
+More Info [here](./Day-12-CSS-Variables-by-Building-a-City-Skyline-and-CSS-Grid-by-Building-a-Magazine/CSS-grid-by-building-a-magazine/readme.md)
 ## Day-13
 I learned CSS animation by building a Ferris Wheel.  
 I learned CSS Transforms by Building a Penguin.
 
-More Info [here](./Day-13/CSS-animation-by-building-a-Ferris-Wheel/readme.md)
-More Info [here](./Day-13/CSS-transforms-by-building-a-penguin/readme.md)
+More Info [here](./Day-13-CSS-Animation-by-Building-a-Ferris-Wheel-and-CSS-Transforms-by-Building-Penguin/CSS-animation-by-building-a-Ferris-Wheel/readme.md)
+More Info [here](./Day-13-CSS-Animation-by-Building-a-Ferris-Wheel-and-CSS-Transforms-by-Building-Penguin/CSS-transforms-by-building-a-penguin/readme.md)
 
 ## Day-14  
 I built technical documentation page. 
 
-More Info [here](./Day-14/technical-documentation-page/readme.md)  
+More Info [here](./Day-14-Technical-Documentation-Page/technical-documentation-page/readme.md)  
   
 ## Day-15  
 I built product landing page. 
 
-More Info [here](./Day-15/product-landing-page/readme.md)   
+More Info [here](./Day-15-Product-Landing-Page/product-landing-page/readme.md)   
 
 ## Day-16  
 Built a Personal Portfolio.  
 
-More Info [here](./Day-16/Day-16.md)   
+More Info [here](./Day-16-Personal-Portfolio-Website/Day-16.md)   
 
 ## Day-17  
 Earned responsive web design certification.   
 
-More Info [here](./Day-17/Day-17.md)  
+More Info [here](./Day-17-Earned-Responsive-Web-Design-Certification/Day-17.md)  
 
 ## Day-18  
 I am Learning Basic Javascript.  
@@ -106,12 +106,12 @@ More Info [here](./Day-19-basic-javascript/Day-19.md)
 ## Day-20  
 learned bootstrap. 
 
-More Info [here](./Day-20-bootstrap-project/Bootstrap/bootstrap.md)   
+More Info [here](./Day-20-Bootstrap/Bootstrap/bootstrap.md)   
 
 ## Day-21  
 Completed a project on bootstrap.
 
-More Info [here](./Day-21/Day-21.md)  
+More Info [here](./Day-21-bootstrap-project-Convention-Center/Day-21.md)  
 
 ## Day-22  
 I am Learning ES6.
@@ -119,12 +119,12 @@ I am Learning ES6.
 More Info [here](./Day-22-ES6/Day-22.md)  
 
 ## Day-23  
-I learned regular expression
+I learned regular expression.
 
 More Info [here](./Day-23-regular-expression/Day-23.md) 
 
 ## Day-24  
-I learned Javascript DEbugging.
+I learned Javascript Debugging.
 
 More Info [here](./Day-24-debugging/Day-24.md) 
 ## Day-25  
