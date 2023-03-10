@@ -22,13 +22,15 @@ More Info [here](./Day-4-Learn-HTML-Forms-by-Building-a-Registration-Form/Day-4.
 
 ## Day-5
 I learned to build Survey Form.
+
 I learned to build a CSS Box Model by Building a Rothko Painting .
 
 More Info [here](./Day-5-Survey-Form-and-Learn-the-CSS-Box-Model-by-Building-a-Rothko-Painting/survey-form/Day-5.md)
 More Info [here](./Day-5-Survey-Form-and-Learn-the-CSS-Box-Model-by-Building-a-Rothko-Painting/rothko-painting/readme.md)
 
 ## Day-6
-I learned CSS Flexbox by Building a Photo Gallery.
+I learned CSS Flexbox by Building a Photo Gallery. 
+
 I Learned Typography by Building a Nutrition Label.
 
 
@@ -61,7 +63,8 @@ I am learning Intermediate CSS by Building a Picasso Painting.
 More Info [here](./Day-11-Learn-Intrmediate-CSS-by-Building-a-Picasso-Painting/Day-11.md)
 
 ## Day-12  
-I learned CSS variables by building a city skyline.
+I learned CSS variables by building a city skyline.  
+
 I learned CSS grid by building a magazine.   
 
 More Info [here](./Day-12-CSS-Variables-by-Building-a-City-Skyline-and-CSS-Grid-by-Building-a-Magazine/CSS-Variables-by-Building-a-City-Skyline/readme.md)
