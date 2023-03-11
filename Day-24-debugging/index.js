@@ -335,8 +335,25 @@ Waiting:The matrix variable should have 3 rows.
 Waiting:The matrix variable should have 2 columns in each row.
 Waiting:zeroArray(4,3) should return an array holding 4 rows of 3 columns of zeroes each.
 */
+function zeroArray(m, n) {
+  // Creates a 2-D array with m rows and n columns of zeroes
+  let newArray = [];
+// let row = [];
+  for (let i = 0; i < m; i++) {
+    // Adds the m-th row into newArray
+  let row = [];
+    for (let j = 0; j < n; j++) {
+      // Pushes n zeroes into the current row to create the columns
+      row.push(0);
+    }
+    // Pushes the current row, which now has n zeroes in it, to the array
+    newArray.push(row);
+  }
+  return newArray;
+}
 
-
+let matrix = zeroArray(3, 2);
+console.log(matrix);
 
 
 
@@ -362,3 +379,10 @@ Tests
 Waiting:Your code should change the comparison operator in the terminal condition (the middle part) of the for loop.
 Waiting:Your code should fix the comparison operator in the terminal condition of the loop.
 */
+
+function myFunc() {
+  for (let i = 1; i <= 4; i += 2) {
+    console.log("Still going!");
+  }
+}
+myFunc();
