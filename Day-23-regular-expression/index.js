@@ -688,7 +688,10 @@ Waiting:Your regex should not match the string c57bT3
 Waiting:Your regex should match the string AB1
 Waiting:Your regex should not match the string J%4
 */
-
+let username = "JackOfAllTrades";
+let userCheck = /^[a-z][a-z]+\d*$|^[a-z]\d\d+$/i;
+let result = userCheck.test(username);
+console.log(result);
 
 
 
@@ -716,7 +719,10 @@ Waiting:Your regex should find no spaces in the string MindYourPersonalSpace
 
 */
 
-
+let sample = "Whitespace is important in separating words";
+let countWhiteSpace = /\s/ig; // Change this line
+let result = sample.match(countWhiteSpace);
+console.log(result);
 
 
 
@@ -741,7 +747,10 @@ Waiting:Your regex should find 23 non-spaces in the string Space: the final fron
 Waiting:Your regex should find 21 non-spaces in the string MindYourPersonalSpace
 */
 
-
+let sample = "Whitespace is important in separating words";
+let countNonWhiteSpace = /\S/ig; // Change this line
+let result = sample.match(countNonWhiteSpace);
+console.log(result);
 
 
 
@@ -774,6 +783,10 @@ Waiting:Your regex should not match the string Ohhhhhhh no
 
 
 
+let ohStr = "Ohhh no";
+let ohRegex = /Oh{3,6}\sno/;
+let result = ohRegex.test(ohStr);
+console.log(result);
 
 
 
@@ -806,7 +819,10 @@ Waiting:Your regex should match the string Hazzzzzzah
 Waiting:Your regex should match the string Hazzah with 30 z's in it.
 
 */
-
+let haStr = "Hazzzzah";
+let haRegex = /Haz{4,}ah/;
+let result = haRegex.test(haStr);
+console.log(result);
 
 
 
@@ -840,7 +856,10 @@ Waiting:Your regex should match the string Timmmmber
 Waiting:Your regex should not match the string Timber with 30 m's in it.
 */
 
-
+let timStr = "Timmmmber";
+let timRegex = /Tim{4}ber/; // Change this line
+let result = timRegex.test(timStr);
+console.log(result);
 
 
 
@@ -870,7 +889,10 @@ Waiting:Your regex should not match the string fav
 
 */
 
-
+let favWord = "favorite";
+let favRegex = /favou?rite/; // Change this line
+let result = favRegex.test(favWord);
+console.log(result);
 
 
 
@@ -914,7 +936,10 @@ Waiting:Your regex should not match the string 1a2bcde
 Waiting:Your regex should match the string astr1on11aut
 */
 
-
+let sampleWord = "astronaut";
+let pwRegex = /(?=\w{6})(?=\w*\d{2})/; // Change this line
+let result = pwRegex.test(sampleWord);
+console.log(result);
 
 
 
@@ -948,7 +973,11 @@ Waiting:You should use .test() to test the regex.
 Waiting:Your result should return true.
 */
 
-
+let myString = "Eleanor Roosevelt";
+let myRegex = /(Franklin|Eleanor)\s.*Roosevelt/; // Change this line
+let result = myRegex.test(myString); // Change this line
+// After passing the challenge experiment with myString and see how the grouping works
+console.log(result);
 
 
 
@@ -986,9 +1015,10 @@ Waiting:Your regex should not match the string 42\t42\t42.
 Waiting:Your regex should not match the string 42  42  42.
 */
 
-
-
-
+let repeatNum = "42 42 42";
+let reRegex = /^(\d+) \1 \1$/; // Change this line
+let result = reRegex.test(repeatNum);
+console.log(result);
 
 
 // 32. Use Capture Groups to Search and Replace
@@ -1017,7 +1047,11 @@ Waiting:fixRegex should use at least three capture groups.
 Waiting:replaceText should use parenthesized submatch string(s) (i.e. the nth parenthesized submatch string, $n, corresponds to the nth capture group).
 
 */
-
+let str = "one two three";
+let fixRegex = /(\w+)\s(\w+)\s(\w+)/; // Change this line
+let replaceText = '$3 $2 $1'; // Change this line
+let result = str.replace(fixRegex, replaceText);
+console.log(result);
 
 
 
@@ -1036,3 +1070,7 @@ Waiting:The result variable should not directly be set to a string
 Waiting:The value of the hello variable should not be changed.
 */
 
+let hello = "   Hello, World!  ";
+let wsRegex = /^\s+|\s+$/ig; // Change this line
+let result = hello.replace(wsRegex, ''); // Change this line
+console.log(result);
