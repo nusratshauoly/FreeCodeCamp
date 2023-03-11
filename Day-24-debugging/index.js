@@ -16,7 +16,13 @@ Use the console.log() method to print the value of the variable a where noted in
 tests
 Waiting:Your code should use console.log() to check the value of the variable a.
 */
+let a = 5;
+let b = 1;
+a++;
+console.log(a);
 
+let sumAB = a + b;
+console.log(sumAB);
 
 
 
@@ -40,7 +46,9 @@ Waiting:You should clear the console after your log.
 */
 
 
-
+let output = "Get this to show once in the freeCodeCamp console and not at all in the browser console";
+console.log(output);
+console.clear();
 
 
 // 3. Use typeof to Check the Type of a Variable
@@ -64,9 +72,14 @@ tests
 Your code should use typeof in two console.log() statements to check the type of the variables.
 Waiting:Your code should use typeof to check the type of the variable seven.
 Waiting:Your code should use typeof to check the type of the variable three.
-
 */
 
+let seven = 7;
+let three = "3";
+console.log(seven + three);
+// Only change code below this line
+console.log(typeof seven);
+console.log(typeof three);
 
 
 
@@ -88,8 +101,14 @@ Waiting:There should be no instances of misspelled variables in the code.
 Waiting:The receivables variable should be declared and used properly in the code.
 Waiting:There should be no instances of misspelled variables in the code.
 Waiting:The payables variable should be declared and used properly in the code.
-
 */
+let receivables = 10;
+let payables = 8;
+// let netWorkingCapital = recievables - payable;
+let netWorkingCapital = receivables - payables;
+console.log(`Net working capital is: ${netWorkingCapital}`);
+
+
 
 
 
@@ -108,6 +127,11 @@ tests
 Your code should fix the missing piece of the array.
 Waiting:Your code should fix the missing piece of the .reduce() method. The console output should show that Sum of array values is: 6.
 */
+// let myArray = [1, 2, 3;
+let myArray = [1, 2, 3];
+// let arraySum = myArray.reduce((previous, current =>  previous + current);
+let arraySum = myArray.reduce((previous, current) =>  previous + current);
+console.log(`Sum of array values is: ${arraySum}`);
 
 
 
@@ -138,7 +162,8 @@ Waiting:Your code should keep the double quotes around the entire string.
 
 */
 
-
+let innerHtml = "<p>Click here to <a href='#Home'>return home</a></p>";
+console.log(innerHtml);
 
 
 
@@ -171,6 +196,17 @@ Your code should fix the condition so it checks for equality, instead of using a
 Waiting:The condition should use either == or === to test for equality.
 */
 
+let x = 7;
+let y = 9;
+let result = "to come";
+
+if(x == y) {
+  result = "Equal!";
+} else {
+  result = "Not equal!";
+}
+
+console.log(result);
 
 
 
@@ -198,7 +234,14 @@ Waiting:Your code should call the getNine function.
 
 */
 
+function getNine() {
+  let x = 6;
+  let y = 3;
+  return x + y;
+}
 
+let result = getNine();
+console.log(result);
 
 
 
@@ -219,7 +262,15 @@ Waiting:Your code should use the correct order of the arguments for the raiseToP
 */
 
 
+function raiseToPower(b, e) {
+  return Math.pow(b, e);
+}
 
+let base = 2;
+let exp = 3;
+// let power = raiseToPower(exp, base);
+let power = raiseToPower(base, exp);
+console.log(power);
 
 
 
@@ -253,7 +304,16 @@ Waiting:Your code should fix the initial condition of the loop so that the index
 Waiting:Your code should set the terminal condition of the loop so it stops at the last index.
 Waiting:Your code should fix the terminal condition of the loop so that it stops at 1 before the length.
 */
-
+function countToFive() {
+  let firstFive = "12345";
+  let len = firstFive.length;
+  // Only change code below this line
+  for (let i = 0; i < len; i++) {
+  // Only change code above this line
+    console.log(firstFive[i]);
+  }  
+}
+countToFive();
 
 
 
@@ -274,8 +334,6 @@ Your code should set the matrix variable to an array holding 3 rows of 2 columns
 Waiting:The matrix variable should have 3 rows.
 Waiting:The matrix variable should have 2 columns in each row.
 Waiting:zeroArray(4,3) should return an array holding 4 rows of 3 columns of zeroes each.
-
-
 */
 
 
