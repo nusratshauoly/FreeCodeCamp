@@ -131,8 +131,9 @@ I learned Javascript Debugging.
 
 More Info [here](./Day-24-debugging/Day-24.md) 
 ## Day-25  
+I learned Basic Data Structures in Javascript.
 
-
+More Info [here](./Day-25-Basic-Data-Structures/Day-25.md) 
 ## Day-26  
 
 
