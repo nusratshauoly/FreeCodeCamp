@@ -40,7 +40,8 @@ Waiting:yourArray should contain at least one number.
 Waiting:yourArray should contain at least one string.
 
 */
-
+let yourArray = ['one', 2, 'three', true, false, undefined, null]; // Change this line
+console.log(yourArray.length);
 
 
 
@@ -72,7 +73,9 @@ Waiting:myArray[3] should be equal to the letter d
 
 */
 
-
+let myArray = ["a", "b", "c", "d"];
+myArray[1] = "not b anymore";
+console.log(myArray);
 
 
 
@@ -99,11 +102,14 @@ Tests
 Waiting:mixedNumbers(["IV", 5, "six"]) should now return ["I", 2, "three", "IV", 5, "six", 7, "VIII", 9]
 Waiting:The mixedNumbers function should utilize the push() method
 Waiting:The mixedNumbers function should utilize the unshift() method
-
 */
+function mixedNumbers(arr){
+  arr.unshift('I', 2, 'three');
+  arr.push(7, 'VIII', 9);
+  return arr;
+}
 
-
-
+console.log(mixedNumbers(['IV', 5, 'six']));
 
 
 
@@ -134,8 +140,12 @@ Waiting:The popShift function should utilize the pop() method
 Waiting:The popShift function should utilize the shift() method
 */
 
-
-
+function popShift(arr){
+   let popped = arr.pop();
+   let shifted = arr.shift();
+   return[shifted, popped];
+}
+console.log(popShift(['challenge', 'is', 'not', 'complete']));
 
 
 
@@ -166,7 +176,9 @@ Waiting:Your code should utilize the splice() method on arr.
 Waiting:The splice should only remove elements from arr and not add any additional elements to arr.
 */
 
-
+const arr = [2, 4, 5, 1, 7, 5];
+arr.splice(1, 4);
+console.log(arr);
 
 
 
@@ -191,11 +203,13 @@ Waiting:htmlColorNames should return ["DarkSalmon", "BlanchedAlmond", "LavenderB
 Waiting:The htmlColorNames function should utilize the splice() method
 Waiting:You should not use shift() or unshift().
 Waiting:You should not use array bracket notation.
-
 */
 
-
-
+function htmlColorsNames(arr){
+   arr.splice(0, 2, 'DarkSalmon', 'BlanchedAlmond');
+   return arr;
+}
+console.log(htmlColorNames(['DarkGoldenRod', 'WhiteSmoke', 'LavenderBlush', 'PaleTurquoise', 'FireBrick']));
 
 
 
@@ -216,11 +230,11 @@ We have defined a function, forecast, that takes an array as an argument. Modify
 Tests
 Waiting:forecast should return ["warm", "sunny"]
 Waiting:The forecast function should utilize the slice() method
-
 */
-
-
-
+function forecast(arr){
+    return arr.slice(2, 4);
+}
+console.log(forecast(['cold', 'rainy', 'warm', 'sunny', 'cool', 'thunderstorms']));
 
 
 
@@ -242,7 +256,6 @@ Waiting:copyMachine([1, 2, 3], 5) should return [[1, 2, 3], [1, 2, 3], [1, 2, 3]
 Waiting:copyMachine([true, true, null], 1) should return [[true, true, null]]
 Waiting:copyMachine(["it works"], 3) should return [["it works"], ["it works"], ["it works"]]
 Waiting:The copyMachine function should utilize the spread operator with array arr
-
 */
 
 
