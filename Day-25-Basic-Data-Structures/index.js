@@ -258,9 +258,15 @@ Waiting:copyMachine(["it works"], 3) should return [["it works"], ["it works"], 
 Waiting:The copyMachine function should utilize the spread operator with array arr
 */
 
-
-
-
+function copyMachine(arr, num){
+     let newArr = [];
+     while (num >= 1){
+     newArr.push([...arr]);
+     num--;
+    }
+    return newArr;
+}
+console.log(copyMachine([true, false, true], 2));
 
 // 9. Combine Arrays with the Spread Operator
 /*
@@ -280,8 +286,12 @@ Waiting:spreadOut should return ["learning", "to", "code", "is", "fun"]
 Waiting:The spreadOut function should utilize spread syntax
 */
 
-
-
+function spreadOut(){
+    let fragment = ['to', 'code'];
+    let sentence = ['learning', ...fragment, 'is', 'fun'];
+    return sentence;
+}
+console.log(spreadOut());
 
 
 
@@ -309,8 +319,10 @@ Waiting:quickCheck([true, false, false], undefined) should return false
 Waiting:The quickCheck function should utilize the indexOf() method
 */
 
-
-
+function quickCheck(arr, elem){
+    return arr.indexOf(elem) > -1;
+}
+console.log(quickCheck(['squash', 'onions', 'shallots', 'mashrooms' ]));
 
 
 
