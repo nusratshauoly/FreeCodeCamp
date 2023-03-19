@@ -135,9 +135,9 @@ I learned Basic Data Structures in Javascript.
 
 More Info [here](./Day-25-Basic-Data-Structures/Day-25.md) 
 ## Day-26  
-I learned Basic Algorithm Scripting.
+I learned Basic Data Structures in Javascript.
 
-More Info [here](./Day-26-Basic-Algorithm-Scripting/Day-26.md)
+More Info [here](./Day-26-Basic-Data-Structures/Day-26.md)
 
 ## Day-27  
 I learned Object Oriented Programming.
