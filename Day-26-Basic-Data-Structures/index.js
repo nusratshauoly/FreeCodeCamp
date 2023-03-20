@@ -27,9 +27,22 @@ Waiting:filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3) should
 Waiting:The filteredArray function should utilize a for loop
 */
 
+function filteredArray(arr, elem){
+     let newArr = [];
+   // change code below this line
+for(let i = 0; i < arr.length; arr++){
+   if(arr[1].indexOf(elem) == -1){
+  //Checks every parameter for the element and if is NOT there continues the code
 
-
-
+   newArr.push(arr[i]);
+   //Inserts the element of the array in the new filtered array
+  }
+}   
+// change code above this line
+return newArr;
+}
+ // change code here to test different cases:
+console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3));
 
 
 
@@ -78,6 +91,18 @@ Waiting:myNestedArray should contain exactly one occurrence of the string deeper
 Waiting:myNestedArray should contain exactly one occurrence of the string deepest on an array nested 5 levels deep
 */
 
+let myNestedArray = [
+  // Only change code below this line
+  ['unshift', false, 1, 2, 3, 'complex', 'nested'],
+  ['loop', 'shift', 6, 7, 1000, 'method'],
+  ['concat', false, true, 'spread', 'array',['deep']],
+  ['mutate', 1327.98, 'splice', 'slice', 'push', [['deeper']]],
+  ['iterate', 1.3849, 7, '8.4876', 'arbitrary', 'depth',[[['deepest']]]]
+  // Only change code above this line
+];
+
+
+
 
 
 
@@ -122,6 +147,16 @@ Waiting:The foods object should have a key grapes with a value of 35.
 Waiting:The foods object should have a key strawberries with a value of 27.
 Waiting:The key-value pairs should be set using dot or bracket notation.
 */
+
+let foods = {
+    apples: 25,
+    oranges: 32,
+    plums: 28
+};
+foods['bananas'] = 13;
+foods['grapes'] = 35;
+foods['strawberries'] = 27;
+console.log(foods);
 
 
 
