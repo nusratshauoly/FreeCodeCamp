@@ -192,8 +192,18 @@ Waiting:The online property nested in the data key of userActivity should be set
 Waiting:The online property should be set using dot or bracket notation.
 */
 
-
-
+let userActivity = {
+   id: 23894201352,
+   date: 'January 1, 2017',
+   data: {
+      totalUsers: 51,
+      online: 42
+  }
+};
+// Only change code below this line
+userActivity.data.online = 45;
+// Only change code above this line
+console.log(userActivity);
 
 
 
@@ -216,8 +226,21 @@ Waiting:checkInventory("strawberries") should return 27.
 
 */
 
+let foods = {
+   apples: 25,
+   oranges: 32,
+   plums: 28,
+   bananas: 13,
+   grapes: 35,
+   strawberries: 27
 
-
+};
+function checkInventory(scannedItem){
+// Only change code below this line
+     return foods[scannedItem];
+// Only change code above this line
+}
+console.log(checkInventory("apples"));
 
 
 
@@ -239,7 +262,22 @@ Waiting:The oranges, plums, and strawberries keys should be removed using delete
 */
 
 
+let foods = {
+  apples: 25,
+  oranges: 32,
+  plums: 28,
+  bananas: 13,
+  grapes: 35,
+  strawberries: 27
+};
 
+// Only change code below this line
+delete foods.oranges;
+delete foods.plums;
+delete foods.strawberries;
+// Only change code above this line
+
+console.log(foods);
 
 
 
