@@ -302,9 +302,63 @@ Waiting:The function isEveryoneHere should return false if Sarah is not a proper
 Waiting:The function isEveryoneHere should return false if Ryan is not a property on the object passed to it.
 
 */
+let users = {
+  Alan: {
+    age: 27,
+    online: true
+  },
+  Jeff: {
+    age: 32,
+    online: true
+  },
+  Sarah: {
+    age: 48,
+    online: true
+  },
+  Ryan: {
+    age: 19,
+    online: true
+  }
+};
+
+function isEveryoneHere(userObj) {
+ return userObj.hasOwnProperty("Alan") &&
+    userObj.hasOwnProperty("Jeff") &&
+    userObj.hasOwnProperty("Sarah") &&
+    userObj.hasOwnProperty("Ryan");
+}
 
 
+// or
 
+
+let users = {
+   Alan:{
+     age: 27,
+     online:true
+  },
+  Jeff:{
+     age: 32,
+     online: true
+  },
+  Sarah: {
+    age: 48,
+    online: true
+  },
+  Ryan: {
+    age: 19,
+    online: true
+  }
+}
+function isEveryoneHere(userObj){
+   // Only change code below this line
+
+   return 'Alan' in userObj && 'Jeff' in userObj && 'Sarah' in userObj && 'Ryan' in userObj;
+
+   // Only change code above this line
+ }
+
+console.log(isEveryoneHere(users));
 
 
 // 18. Iterate Through the Keys of an Object with a for...in Statement
@@ -341,8 +395,27 @@ Waiting:The function countOnline should return 1 when the object { Alan: { onlin
 Waiting:The function countOnline should return 2 when the object { Alan: { online: true }, Jeff: { online: false }, Sarah: { online: true } } is passed to it
 Waiting:The function countOnline should return 0 when the object { Alan: { online: false }, Jeff: { online: false }, Sarah: { online: false } } is passed to it
 */
-
-
+const users = {
+ Alan: {
+   online: false
+},
+Jeff: {
+   online: false
+},
+Sarah:{
+  online: false
+}
+}
+function countOnline(usersObj){
+   let result = 0;
+   for(let users in usersObj){
+      if(usersObj[users].online === true){
+         result++;
+      }
+  }
+  return result;
+}
+console.log(countOnline(users));
 
 
 
@@ -358,8 +431,30 @@ Waiting:The users object should only contain the keys Alan, Jeff, Sarah, and Rya
 Waiting:The getArrayOfUsers function should return an array which contains all the keys in the users object
 */
 
-
-
+let users = {
+  Alan: {
+    age: 27,
+    online: false
+  },
+  Jeff:{
+    age: 32,
+    online: true
+  },
+  Sarah: {
+    age: 48,
+    online: false
+  },
+  Ryan: {
+    age: 19,
+    online: true
+  }
+};
+function getArrayOfUsers(obj){
+   // Only change code below this line
+  return Object.keys(obj);
+  // Only change code above this line
+}
+console.log(getArrayOfUsers(users));
 
 
 
@@ -374,3 +469,31 @@ Waiting:The user object should have name, age, and data keys.
 Waiting:The addFriend function should accept a user object and a friend string as arguments and add the friend to the array of friends in the user object.
 Waiting:addFriend(user, "Pete") should return ["Sam", "Kira", "Tomo", "Pete"].
 */
+
+let user = {
+  name: 'Kenneth',
+  age: 28,
+  data: {
+    username: 'kennethCodesAllDay',
+    joinDate: 'March 26, 2016',
+    organization: 'freeCodeCamp',
+    friends: [
+      'Sam',
+      'Kira',
+      'Tomo'
+    ],
+    location: {
+      city: 'San Francisco',
+      state: 'CA',
+      country: 'USA'
+    }
+  }
+};
+function addFriend(userObj){
+    // Only change code below this line
+   userObj.data.friends.push(friend);
+   return userObj.data.friends;
+   // Only change code above this line
+}
+
+console.log(addFriend(user, 'Pete'));
