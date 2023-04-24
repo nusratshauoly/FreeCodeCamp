@@ -13,7 +13,12 @@ Waiting:convertCtoF(20) should return a value of 68
 Waiting:convertCtoF(30) should return a value of 86
 */
 
-
+function convertCtoF(celsius) {
+    let fahrenheit = celsius * (9/5) + 32;
+    return fahrenheit;
+  }
+  
+  console.log(convertCtoF(30));
 
 
 
@@ -31,9 +36,11 @@ Waiting:reverseString("Howdy") should return the string ydwoH.
 Waiting:reverseString("Greetings from Earth") should return the string htraE morf sgniteerG.
 */
 
-
-
-
+function reverseString(str) {
+    return str.split("").reverse().join("");
+  }
+  
+  console.log(reverseString("hello"));
 
 
 // 3. Factorialize a Number
@@ -56,6 +63,33 @@ Waiting:factorialize(20) should return 2432902008176640000.
 Waiting:factorialize(0) should return 1.
 */
 
+function factorialize(num) {
+    let total = 1;
+     for(let i = 0; i < num; i++){
+       total *= i + 1;
+         
+     }
+     return total;
+   }
+   
+   console.log(factorialize(5));
+
+//    or
+
+function factorialize(num) {
+    if(num === 0 || num === 1){
+      return 1;
+    }
+     for(let i = num - 1; i >= 1; i--){
+       num *= i;
+         
+     }
+     return num;
+   }
+   
+   console.log(factorialize(5));
+
+
 
 
 
@@ -73,8 +107,11 @@ Waiting:findLongestWordLength("May the force be with you") should return 5.
 Waiting:findLongestWordLength("Google do a barrel roll") should return 6.
 Waiting:findLongestWordLength("What is the average airspeed velocity of an unladen swallow") should return 8.
 Waiting:findLongestWordLength("What if we try a super-long word such as otorhinolaryngology") should return 19.
-
 */
+
+
+
+
 
 
 
