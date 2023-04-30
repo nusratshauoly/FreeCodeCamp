@@ -23,10 +23,10 @@ Waiting:dog should have a numLegs property set to a number.
 */
 
 
-
-
-
-
+let dog = {
+  name: "Spot",
+  numLegs: 4
+};
 
 
 // 2. Use Dot Notation to Access the Properties of an Object
@@ -47,12 +47,13 @@ Waiting:Your code should use console.log to print the value for the name propert
 Waiting:Your code should use console.log to print the value for the numLegs property of the dog object.
 */
 
-
-
-
-
-
-
+let dog = {
+  name: "Spot",
+  numLegs: 4
+};
+// Only change code below this line
+console.log(dog.name);
+console.log(dog.numLegs);
 
 // 3. Create a Method on an Object
 /*
@@ -73,13 +74,15 @@ Using the dog object, give it a method called sayLegs. The method should return 
 Tests
 Waiting:dog.sayLegs() should be a function.
 Waiting:dog.sayLegs() should return the given string - note that punctuation and spacing matter.
-
 */
 
+let dog = {
+  name: "Spot",
+  numLegs: 4,
+  sayLegs: function() {return "This dog has " + dog.numLegs + " legs."}
+};
 
-
-
-
+dog.sayLegs();
 
 
 // 4. Make Code More Reusable with the this Keyword
@@ -105,7 +108,13 @@ Waiting:dog.sayLegs() should return the given string.
 Waiting:Your code should use the this keyword to access the numLegs property of dog.
 */
 
+let dog = {
+  name: "Spot",
+  numLegs: 4,
+  sayLegs: function() {return "This dog has " + this.numLegs + " legs.";}
+};
 
+dog.sayLegs();
 
 
 
@@ -134,12 +143,11 @@ Waiting:Dog should have a name property set to a string.
 Waiting:Dog should have a color property set to a string.
 Waiting:Dog should have a numLegs property set to a number.
 */
-
-
-
-
-
-
+function Dog() {
+  this.name = "Spot";
+  this.color = "white";
+  this.numLegs = 4; 
+}
 
 // 6. Use a Constructor to Create Objects
 /*
@@ -170,9 +178,13 @@ Waiting:hound should be created using the Dog constructor.
 Waiting:Your code should use the new operator to create an instance of Dog.
 */
 
-
-
-
+function Dog() {
+  this.name = "Rupert";
+  this.color = "brown";
+  this.numLegs = 4;
+}
+// Only change code below this line
+let hound = new Dog();
 
 
 // 7. Extend Constructors to Receive Arguments
@@ -205,10 +217,13 @@ Waiting:Dog should have property numLegs set to 4.
 Waiting:terrier should be created using the Dog constructor.
 */
 
-
-
-
-
+function Dog(name, color) {
+  this.name = name;
+  this.color = color;
+  this.numLegs = 4;
+}
+let terrier = new Dog("Leo", "Brown");
+console.log(terrier);
 
 // 8. Verify an Object's Constructor with instanceof
 /*
