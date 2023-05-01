@@ -28,6 +28,7 @@ let dog = {
   numLegs: 4
 };
 
+///////////////
 
 // 2. Use Dot Notation to Access the Properties of an Object
 /*
@@ -54,6 +55,8 @@ let dog = {
 // Only change code below this line
 console.log(dog.name);
 console.log(dog.numLegs);
+
+///////////////
 
 // 3. Create a Method on an Object
 /*
@@ -84,6 +87,7 @@ let dog = {
 
 dog.sayLegs();
 
+//////////////////////
 
 // 4. Make Code More Reusable with the this Keyword
 /*
@@ -117,7 +121,7 @@ let dog = {
 dog.sayLegs();
 
 
-
+/////////////////////
 
 // 5. Define a Constructor Function
 
@@ -148,6 +152,8 @@ function Dog() {
   this.color = "white";
   this.numLegs = 4; 
 }
+
+////////////////////////
 
 // 6. Use a Constructor to Create Objects
 /*
@@ -186,6 +192,7 @@ function Dog() {
 // Only change code below this line
 let hound = new Dog();
 
+///////////////////////
 
 // 7. Extend Constructors to Receive Arguments
 /*
@@ -225,6 +232,8 @@ function Dog(name, color) {
 let terrier = new Dog("Leo", "Brown");
 console.log(terrier);
 
+/////////////////////////////
+
 // 8. Verify an Object's Constructor with instanceof
 /*
 Anytime a constructor function creates a new object, that object is said to be an instance of its constructor. JavaScript gives a convenient way to verify this with the instanceof operator. instanceof allows you to compare an object to a constructor, returning true or false based on whether or not that object was created with the constructor. Here's an example:
@@ -258,13 +267,15 @@ Waiting:myHouse should have a numBedrooms attribute set to a number.
 Waiting:You should verify that myHouse is an instance of House using the instanceof operator.
 */
 
+function House(numBedrooms) {
+  this.numBedrooms = numBedrooms;
+}
 
+// Only change code below this line
+let myHouse = new House(4);
+console.log(myHouse instanceof House);
 
-
-
-
-
-
+////////////////////////////////
 
 // 9. Understand Own Properties
 /*
@@ -298,12 +309,21 @@ Waiting:You should solve this challenge without using the built in method Object
 Waiting:You should solve this challenge without hardcoding the ownProps array.
 
 */
+function Bird(name){
+  this.name = name;
+  this.numLegs = 2;
+}
+let canary = new Bird('Tweety');
+let ownProps = [];
+for(let property in canary){
+   if(canary.hasOwnProperty(property))
+   {
+    ownProps.push(property);
+  }
+}
+console.log(ownProps);
 
-
-
-
-
-
+//////////////////////////////
 
 // 10. Use Prototype Properties to Reduce Duplicate Code
 
@@ -329,12 +349,15 @@ Waiting:beagle.numLegs should be a number.
 Waiting:numLegs should be a prototype property not an own property.
 */
 
+function Dog(name){
+    this.name = name;
+}
+Dog.prototype.numLegs = 4;
 
+let beagle = new Dog("Snoopy");
+console.log(beagle);
 
-
-
-
-
+///////////////////////////
 
 
 // 11. Iterate Over All Properties
@@ -373,10 +396,26 @@ Waiting:The prototypeProps array should only contain numLegs.
 Waiting:You should solve this challenge without using the built in method Object.keys().
 */
 
+function Dog(name){
+  this.name = name;
+}
+Dog.prototype.numLegs = 4;
+let beagle = new Dog("Snoopy");
+let ownProps = [];
+let prototypeProps = [];
 
+for(let property in beagle){
+  if(beagle.hasOwnProperty(property)){
+    ownProps.push(property);
+  }
+  else{
+    prototypeProps.push(property);
+  }
+}
+console.log(ownProps);
+console.log(prototypeProps);
 
-
-
+///////////////////////////
 
 // 12. Understand the Constructor Property
 /*
@@ -408,12 +447,19 @@ Waiting:joinDogFraternity should return true if candidate is an instance of Dog.
 Waiting:joinDogFraternity should use the constructor property.
 */
 
+function Dog(name){
+   this.name = name;
+}
 
+function joinDogFraternity(candidate){
+  if(candidate.constructor === Dog){
+    return true;
+  }else{
+    return false;
+  }
+}
 
-
-
-
-
+///////////////////////////////
 
 // 13. Change the Prototype to a New Object
 /*
@@ -449,7 +495,21 @@ Waiting:Dog.prototype should have the method eat().
 Waiting:Dog.prototype should have the method describe().
 */
 
+function Dog(name){
+  this.name = name;
+}
 
+Dog.prototype = {
+  numLegs : 2,
+  eat: function(){
+    console.log("nom nom nom");
+  },
+  describe: function(){
+    console.log("My name is " + this.name);
+  }
+};
+
+/////////////////////////////
 
 
 // 14. Remember to Set the Constructor Property when Changing the Prototype
@@ -479,10 +539,22 @@ Tests
 Waiting:Dog.prototype should set the constructor property.
 */
 
+function Dog(name) {
+  this.name = name;
+}
+// Only change code below this line
+Dog.prototype = {
+  constructor: Dog,
+  numLegs: 4,
+  eat: function(){
+    console.log("nom nom nom");
+  },
+  describe: function() {
+    console.log("My name is " + this.name);
+  }
+};
 
-
-
-
+/////////////////////////
 
 // 15. Understand Where an Object’s Prototype Comes From
 /*
@@ -504,9 +576,14 @@ Tests
 Waiting:You should show that Dog.prototype is the prototype of beagle
 */
 
+function Dog(name){
+  this.name = name;
+}
+let beagle = new Dog("Snoopy");
+// Only change code below this line
+Dog.prototype.isPrototypeOf(beagle);
 
-
-
+///////////////////////////////
 
 // 16. Understand the Prototype Chain
 /*
@@ -532,10 +609,17 @@ Tests
 Waiting:Your code should show that Object.prototype is the prototype of Dog.prototype
 */
 
+function Dog(name){
+  this.name = name;
+}
+let beagle = new Dog("Snoopy");
+
+Dog.prototype.isPrototypeOf(beagle);
+
+Object.prototype.isPrototypeOf(Dog.prototype);
 
 
-
-
+//////////////////////////////
 
 // 17. Use Inheritance So You Don't Repeat Yourself
 /*
@@ -585,10 +669,29 @@ Waiting:Cat.prototype should not have the eat property.
 
 */
 
+function Cat(name){
+  this.name = name;
+}
+Cat.prototype = {
+  constructor: Cat,
+};
+
+function Bear(name){
+  this.name = name;
+}
+Bear.prototype = {
+  constructor: Bear,
+};
+function Animal() { }
+Animal.prototype = {
+  constructor: Animal,
+  eat: function(){
+    console.log("nom nom nom");
+  }
+};
 
 
-
-
+///////////////////////////////
 
 // 18. Inherit Behaviors from a Supertype
 /*
@@ -621,9 +724,19 @@ Waiting:duck should have a prototype of Animal.
 Waiting:beagle should have a prototype of Animal.
 */
 
+function Animal() { }
 
+Animal.prototype = {
+  constructor: Animal,
+  eat: function() {
+    console.log("nom nom nom");
+  }
+};
+// Only change code below this line
+let duck = Object.create(Animal.prototype);
+let beagle = Object.prototype(Animal.prototype);
 
-
+/////////////////////////////////
 
 // 19. Set the Child's Prototype to an Instance of the Parent
 /*
@@ -645,10 +758,21 @@ Waiting:Dog.prototype should be an instance of Animal.
 
 */
 
+function Animal() { }
 
+Animal.prototype = {
+  constructor: Animal,
+  eat: function() {
+    console.log("nom nom nom");
+  }
+};
+function Dog() { }
+// Only change code below this line
+Dog.prototype = Object.create(Animal.prototype);
+let beagle = new Dog();
+beagle.eat();
 
-
-
+////////////////////////////////
 
 // 20. Reset an Inherited Constructor Property
 /*
@@ -673,12 +797,22 @@ Waiting:Dog.prototype should be an instance of Animal.
 Waiting:beagle.constructor should return Dog.
 */
 
+function Animal() { }
+function Bird() { }
+function Dog() { }
+
+Bird.prototype = Object.create(Animal.prototype);
+Dog.prototype = Object.create(Animal.prototype);
+
+// Only change code below this line
+Bird.prototype.constructor = Bird;
+Dog.prototype.constructor = Dog;
+
+let duck = new Bird();
+let beagle = new Dog();;
 
 
-
-
-
-
+///////////////////////////////
 
 // 21. Add Methods After Inheritance
 /*
@@ -717,12 +851,25 @@ Waiting:beagle.eat() should log the string nom nom nom
 Waiting:beagle.bark() should log the string Woof!
 */
 
+function Animal() { }
+Animal.prototype.eat = function() {
+  console.log("nom nom nom");
+}
 
+function Dog() { }
 
+// Only change code below this line
+Dog.prototype = Object.create(Animal.prototype);
+Dog.prototype.constructor = Dog;
 
+Dog.prototype.bark = function() {
+  console.log("Woof!");
+};
+// Only change code above this line
 
+let beagle = new Dog();
 
-
+//////////////////////////////
 
 // 22. Override Inherited Methods
 /*
@@ -759,14 +906,28 @@ Waiting:The bird.fly() method should return the string I am flying!
 
 */
 
+function Bird() { }
+
+Bird.prototype.fly = function() {
+  return "I am flying!";
+}
+
+function Penguin() { }
+Penguin.prototype = Object.create(Bird.prototype);
+Penguin.prototype.constructor = Penguin;
+
+// Only change code below this line
+
+Penguin.prototype.fly = function() {
+  return "Alas, this is a flightless bird."
+};
+
+// Only change code above this line
+let penguin = new Penguin();
+console.log(penguin.fly());
 
 
-
-
-
-
-
-
+//////////////////////////////
 
 
 // 23. Use a Mixin to Add Common Behavior Between Unrelated Objects
@@ -810,9 +971,29 @@ Waiting:Your code should use the glideMixin on the bird object to give it the gl
 Waiting:Your code should use the glideMixin on the boat object to give it the glide method.
 */
 
+let bird = {
+  name: "Donald",
+  numLegs: 2
+};
+
+let boat = {
+  name: "Warrior",
+  type: "race-boat"
+};
+// Only change code below this line
+let glideMixin = function(obj) {
+  obj.glide = function() {
+     console.log("Gliding, Whoosh");
+  }
+};
+
+glideMixin(bird);
+glideMixin(boat);
+
+bird.glide();
 
 
-
+///////////////////////////////
 
 // 24. Use Closure to Protect Properties Within an Object from Being Modified Externally
 /*
@@ -840,12 +1021,19 @@ Tests
 Waiting:The weight property should be a private variable and should be assigned the value of 15.
 Waiting:Your code should create a method in Bird called getWeight that returns the value of the private variable weight.
 Waiting:Your getWeight function should return the private variable weight.
-
 */
 
+function Bird() {
+  let weight = 15;
 
+this.getWeight = function(){
+  return weight;
+};
+}
+let ducky = new Bird();
+ducky.getWeight();
 
-
+/////////////////////////////////
 
 // 25. Understand the Immediately Invoked Function Expression (IIFE)
 /*
@@ -865,11 +1053,11 @@ Waiting:The function should be anonymous.
 Waiting:Your function should have parentheses at the end of the expression to call it immediately.
 */
 
+(function () {
+  console.log("A cozy nest is ready");
+})();
 
-
-
-
-
+//////////////////////////////////
 
 // 26. Use an IIFE to Create a Module
 /*
@@ -912,3 +1100,18 @@ Waiting:funModule should be defined and return an object.
 Waiting:funModule.isCuteMixin should access a function.
 Waiting:funModule.singMixin should access a function.
 */
+
+let funModule = (function() {
+  return {
+    isCuteMixin: function(obj) {
+      obj.isCute = function() {
+        return true;
+      };
+    },
+    singMixin: function(obj) {
+      obj.sing = function() {
+        console.log("Singing to an awesome tune");
+      };
+    }
+  };
+})();
