@@ -160,12 +160,12 @@ I learned Funtional Programming.
 More Info [here](./Day-30-Functional-Programming/Day-30.md)
 
 ## Day-31  
-I am learning Object Oriented Programming.
+I learned Intermediate Algorithm Scripting.
 
 More Info [here](./Day-31/Day-31.md)
 
 ## Day-32  
-I am learning
+I learned Intermediate Algorithm Scripting.
 
 More Info [here](./Day-32/Day-32.md)
 
