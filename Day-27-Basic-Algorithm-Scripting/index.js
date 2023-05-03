@@ -218,10 +218,29 @@ Waiting:The built-in repeat() method should not be used.
 Waiting:repeatStringNumTimes("abc", 0) should return "".
 
 */
+function repeatStringNumTimes(str, num){
+  if(num < 0) return "";
+
+return new Array(num).fill(str).join('');
+}
+console.log(repeatStringNumTimes("abc", 3));
+
+//  or // using for loop
 
 
+function repeatStringNumTimes(str, num){
+  if(num < 0) {
+    return "";
+  }
 
+  let finalString = '';
 
+  for(let i = 0; i < num; i++){
+     finalString += str;
+  }
+return finalString;
+}
+console.log(repeatStringNumTimes("abc", 3));
 
 
 // 8. Truncate a String
@@ -237,10 +256,25 @@ Waiting:truncateString("A-", 1) should return the string A....
 Waiting:truncateString("Absolutely Longer", 2) should return the string Ab....
 
 */
+function truncateString(str, num) {
+  if(str.length > num){
+    str = str.slice(0, num) + '...';
+  }
+  return str;
+}
+console.log(truncateString("A-tisket a-tasket A green and yellow basket", 8));
 
+// or
 
+function truncateString(str, num){
+  if(str.length <= num){
+    return str;
+  }
+  let ourStr = str.split("").splice(0, num).join("");
 
-
+  return ourStr + "...";
+}
+console.log(truncateString("A-tisket a-tasket A green and yellow basket", 8));
 
 
 
