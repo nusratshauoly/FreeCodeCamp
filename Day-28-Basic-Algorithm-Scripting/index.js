@@ -182,22 +182,3 @@ Waiting:chunkArrayInGroups([0, 1, 2, 3, 4, 5, 6, 7, 8], 2) should return [[0, 1]
 */
 
 
-
-
-
-//////////////////////////////////////////////
-
-
-'use strict';
-
-let numbers = [1,8,98,45,65,71,63];
-numbers.slice(2,4);
-
-let name = 'Ariana grande is singing';
-
-name.includes('is');
-name.includes('has');
-
-
-name.substring(0,4);
-

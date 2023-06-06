@@ -30,10 +30,12 @@ Waiting:The filteredArray function should utilize a for loop
 function filteredArray(arr, elem){
      let newArr = [];
    // change code below this line
-for(let i = 0; i < arr.length; arr++){
-   if(arr[1].indexOf(elem) == -1){
+  for (let i = 0; i < arr.length; arr++){
+  //  Every element of the array must then be compared to the elem parameter passed through the filteredArray() function.
+   if(arr[i].indexOf(elem) == -1){
   //Checks every parameter for the element and if is NOT there continues the code
 
+//If a match is NOT found then newArr have that entire subarray added. The push() function is very useful here.
    newArr.push(arr[i]);
    //Inserts the element of the array in the new filtered array
   }
