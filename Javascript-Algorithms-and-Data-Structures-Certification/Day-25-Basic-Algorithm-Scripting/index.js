@@ -63,34 +63,51 @@ Waiting:factorialize(20) should return 2432902008176640000.
 Waiting:factorialize(0) should return 1.
 */
 
+
+// solution link : https://www.freecodecamp.org/news/how-to-factorialize-a-number-in-javascript-9263c89a4b38/
+
+
+// using while loop
 function factorialize(num) {
-    let total = 1;
-     for(let i = 0; i < num; i++){
-       total *= i + 1;
-         
-     }
-     return total;
-   }
-   
-   console.log(factorialize(5));
+    let result = num;
+  if (num === 0 || num === 1) {
+    return 1;
+  }
+  while (num > 1) {
+    num--;
+    result = result * num;
+  }
+  return result;
+}
+console.log(factorialize(5));
 
 //    or
-
+// using for loop
 function factorialize(num) {
     if(num === 0 || num === 1){
       return 1;
     }
      for(let i = num - 1; i >= 1; i--){
-       num *= i;
+       num *= i; // num = num * i;
          
      }
      return num;
    }
-   
    console.log(factorialize(5));
 
-
-
+// using recursion
+function factorialize(num) {
+  if (num < 0) {
+    return 1;
+  }
+  else if (num == 0) {
+    return 1;
+  }
+  else {
+    return (num * factorialize(num - 1);
+  }
+}
+factorialize(5);
 
 
 
@@ -134,21 +151,22 @@ Waiting:largestOfFour([[13, 27, 18, 26], [4, 5, 1, 3], [32, 35, 37, 39], [1000, 
 Waiting:largestOfFour([[4, 9, 1, 3], [13, 35, 18, 26], [32, 35, 97, 39], [1000000, 1001, 857, 1]]) should return [9, 35, 97, 1000000].
 Waiting:largestOfFour([[17, 23, 25, 12], [25, 7, 34, 48], [4, -10, 18, 21], [-72, -3, -17, -10]]) should return [25, 48, 21, -3].
 */
-function largestOfFour(arr){
-  let answer = [];
-    
-    for(let i = 0; i < arr.length; i++){
-      let highest = arr[i][0];
-      for(let j = 0; j < arr[i].length; j++){
-        if(arr[i][j] > highest){
-          highest = arr[i][j];
-        }
-      }
-    answer.push(highest);
-    }
-  return answer;
-}
-console.log(largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // 6. Confirm the Ending
