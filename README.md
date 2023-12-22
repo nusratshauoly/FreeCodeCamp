@@ -190,29 +190,27 @@ More Info [here](./Javascript-Algorithms-and-Data-Structures-Certification/Day-2
 More Info [here](./Javascript-Algorithms-and-Data-Structures-Certification/Day-25-Basic-Algorithm-Scripting/Day-25.md)
 
 ### Day-26  
-- Basic Algorithm Scripting in Javascript.
+- Object Oriented Programming
 
-More Info [here](./Javascript-Algorithms-and-Data-Structures-Certification/Day-26-Basic-Algorithm-Scripting/Day-26.md)
+More Info [here](./Javascript-Algorithms-and-Data-Structures-Certification/Day-26-Object-Oriented-Programming/Day-26.md)
 
 ### Day-27  
-- Object Oriented Programming.
+- 
 
-More Info [here](./Javascript-Algorithms-and-Data-Structures-Certification/Day-27-Object-Oriented-Programming/Day-27.md)
+More Info [here]
 
 ### Day-28  
-- Intermediate Algorithm Scripting.
+- 
 
-More Info [here](./Javascript-Algorithms-and-Data-Structures-Certification/Day-28-Intermediate-Algorithm-Scripting1/Day-28.md)
-
+More Info [here]
 ### Day-29  
-- Intermediate Algorithm Scripting.
+- 
 
-More Info [here](./Javascript-Algorithms-and-Data-Structures-Certification/Day-29-Intermediate-Algorithm-Scripting2/Day-29.md)
+More Info [here]
 ### Day-30  
-- Funtional Programming.
+- 
 
-More Info [here](./Javascript-Algorithms-and-Data-Structures-Certification/Day-30-Functional-Programming/Day-30.md)
-
+More Info [here]
 ### Day-31  
 - 
 
@@ -239,9 +237,9 @@ More Info [here](./)
 More Info [here](./)
 
 ### Day-36  
-- Freecodecamp Javascript DOM
+- 
 
-More Info [here](./Javascript-Algorithms-and-Data-Structures-Certification/Day-36-freecodecamp-Javascript-DOM/day-36.md)
+More Info [here]
 
 ## Front End Development Libraries Certification
 

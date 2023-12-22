@@ -1,4 +1,4 @@
-# Day-27
+# Day-26
 - Learned the following:
 
 1. Create a Basic JavaScript Object
